@@ -25,7 +25,7 @@
 
 ```bash
 git clone https://github.com/xCadrega/inventory.git
-cd inventory
+cd inventory/main
 ```
 
 ### 2. Создание виртуального окружения

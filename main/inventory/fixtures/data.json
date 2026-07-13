@@ -1,0 +1,7490 @@
+[
+  {
+    "model": "inventory.equipmenttype",
+    "pk": 1,
+    "fields": {
+      "name": "Системный блок",
+      "code": "system_unit"
+    }
+  },
+  {
+    "model": "inventory.equipmenttype",
+    "pk": 2,
+    "fields": {
+      "name": "Монитор",
+      "code": "monitor"
+    }
+  },
+  {
+    "model": "inventory.equipmenttype",
+    "pk": 3,
+    "fields": {
+      "name": "Принтер",
+      "code": "printer"
+    }
+  },
+  {
+    "model": "inventory.equipmenttype",
+    "pk": 4,
+    "fields": {
+      "name": "IP-телефон",
+      "code": "ip_phone"
+    }
+  },
+  {
+    "model": "inventory.equipmenttype",
+    "pk": 5,
+    "fields": {
+      "name": "ИБП",
+      "code": "ups"
+    }
+  },
+  {
+    "model": "inventory.equipmenttype",
+    "pk": 6,
+    "fields": {
+      "name": "СЗИ",
+      "code": "iss"
+    }
+  },
+  {
+    "model": "inventory.assetcategory",
+    "pk": 1,
+    "fields": {
+      "name": "Модель системного блока",
+      "code": "system_unit_model"
+    }
+  },
+  {
+    "model": "inventory.assetcategory",
+    "pk": 2,
+    "fields": {
+      "name": "Домен",
+      "code": "domain"
+    }
+  },
+  {
+    "model": "inventory.assetcategory",
+    "pk": 3,
+    "fields": {
+      "name": "ОС",
+      "code": "os"
+    }
+  },
+  {
+    "model": "inventory.assetcategory",
+    "pk": 4,
+    "fields": {
+      "name": "Процессор",
+      "code": "cpu"
+    }
+  },
+  {
+    "model": "inventory.assetcategory",
+    "pk": 5,
+    "fields": {
+      "name": "ОЗУ",
+      "code": "ram_capacity"
+    }
+  },
+  {
+    "model": "inventory.assetcategory",
+    "pk": 6,
+    "fields": {
+      "name": "Диски",
+      "code": "disks"
+    }
+  },
+  {
+    "model": "inventory.assetcategory",
+    "pk": 7,
+    "fields": {
+      "name": "Модель монитора",
+      "code": "monitor_model"
+    }
+  },
+  {
+    "model": "inventory.assetcategory",
+    "pk": 8,
+    "fields": {
+      "name": "Модель принтера",
+      "code": "printer_model"
+    }
+  },
+  {
+    "model": "inventory.assetcategory",
+    "pk": 9,
+    "fields": {
+      "name": "Цвет печати",
+      "code": "print_color"
+    }
+  },
+  {
+    "model": "inventory.assetcategory",
+    "pk": 10,
+    "fields": {
+      "name": "Модель IP-телефона",
+      "code": "ip_phone_model"
+    }
+  },
+  {
+    "model": "inventory.assetcategory",
+    "pk": 11,
+    "fields": {
+      "name": "Модель ИБП",
+      "code": "ups_model"
+    }
+  },
+  {
+    "model": "inventory.assetcategory",
+    "pk": 12,
+    "fields": {
+      "name": "Антивирусное ПО",
+      "code": "antivirus"
+    }
+  },
+  {
+    "model": "inventory.assetcategory",
+    "pk": 13,
+    "fields": {
+      "name": "DLP",
+      "code": "dlp"
+    }
+  },
+  {
+    "model": "inventory.management",
+    "pk": 1,
+    "fields": {
+      "name": "УАКН"
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 1,
+    "fields": {
+      "fullname": "Досанов К.Е.",
+      "cabinet": "101",
+      "management": 1,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "name": "HP ProDesk 971",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 2,
+    "fields": {
+      "category": 2,
+      "name": "dgd.domain",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 3,
+    "fields": {
+      "category": 3,
+      "name": "Windows 10",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 4,
+    "fields": {
+      "category": 4,
+      "name": "i5 6500 3.20 GHz",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 5,
+    "fields": {
+      "category": 5,
+      "name": "8",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 6,
+    "fields": {
+      "category": 6,
+      "name": "1000",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 1,
+    "fields": {
+      "model": 1,
+      "serial_number": "CZC13500MZ",
+      "inventory_number": "236006004943",
+      "computer_name": "3901dosanov",
+      "account": "k.dosanov",
+      "domain": 2,
+      "ip_address": "103.240.5.78",
+      "os": 3,
+      "cpu": 4,
+      "ram_capacity": 5,
+      "disks": 6,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 7,
+    "fields": {
+      "category": 7,
+      "name": "HP",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 1,
+    "fields": {
+      "equipment_type": 2,
+      "model": 7,
+      "serial_number": "0CQ888NG9D",
+      "inventory_number": "236006002660",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 8,
+    "fields": {
+      "category": 8,
+      "name": "-",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 9,
+    "fields": {
+      "category": 9,
+      "name": "ЧБ",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 2,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 9,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 10,
+    "fields": {
+      "category": 10,
+      "name": "-",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 3,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 11,
+    "fields": {
+      "category": 11,
+      "name": "-",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 4,
+    "fields": {
+      "equipment_type": 5,
+      "model": 11,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 12,
+    "fields": {
+      "category": 12,
+      "name": "Dr. Web",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 13,
+    "fields": {
+      "category": 13,
+      "name": "-",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 5,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 1,
+    "fields": {
+      "employee": 1,
+      "system_unit": 1,
+      "monitor": 1,
+      "printer": 2,
+      "ip_phone": 3,
+      "ups": 4,
+      "iss": 5
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 2,
+    "fields": {
+      "fullname": "Ермекова А.П.",
+      "cabinet": "101",
+      "management": 1,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 14,
+    "fields": {
+      "category": 1,
+      "name": "LogyCom",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 15,
+    "fields": {
+      "category": 4,
+      "name": "Ryzen 5 2600 3.40 GHz",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 2,
+    "fields": {
+      "model": 14,
+      "serial_number": "без серийного номера",
+      "inventory_number": "236060002486",
+      "computer_name": "3901ermekova",
+      "account": "a.ermekova",
+      "domain": 2,
+      "ip_address": "103.240.4.125",
+      "os": 3,
+      "cpu": 15,
+      "ram_capacity": 5,
+      "disks": 6,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 16,
+    "fields": {
+      "category": 7,
+      "name": "Philips",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 6,
+    "fields": {
+      "equipment_type": 2,
+      "model": 16,
+      "serial_number": "UK3A2236020130",
+      "inventory_number": "236006005294",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 17,
+    "fields": {
+      "category": 8,
+      "name": "HP LJ Pro MFP M052dw",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 18,
+    "fields": {
+      "category": 9,
+      "name": "-",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 7,
+    "fields": {
+      "equipment_type": 3,
+      "model": 17,
+      "serial_number": "PHB8J4X948",
+      "inventory_number": "236006004974",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 8,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 9,
+    "fields": {
+      "equipment_type": 5,
+      "model": 11,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 10,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 2,
+    "fields": {
+      "employee": 2,
+      "system_unit": 2,
+      "monitor": 6,
+      "printer": 7,
+      "ip_phone": 8,
+      "ups": 9,
+      "iss": 10
+    }
+  },
+  {
+    "model": "inventory.management",
+    "pk": 2,
+    "fields": {
+      "name": "УРЗ"
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 3,
+    "fields": {
+      "fullname": "Ибраева Н.Ж.",
+      "cabinet": "102",
+      "management": 2,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 19,
+    "fields": {
+      "category": 4,
+      "name": "i5 6500 3.19 GHz",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 3,
+    "fields": {
+      "model": 14,
+      "serial_number": "б\\н",
+      "inventory_number": "236060002759",
+      "computer_name": "3901ibraeva",
+      "account": "n.ibraeva",
+      "domain": 2,
+      "ip_address": "103.240.5.58",
+      "os": 3,
+      "cpu": 19,
+      "ram_capacity": 5,
+      "disks": 6,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 11,
+    "fields": {
+      "equipment_type": 2,
+      "model": 16,
+      "serial_number": "UK0A2926085037",
+      "inventory_number": "236006005476",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 12,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 9,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 20,
+    "fields": {
+      "category": 10,
+      "name": "CISCO",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 13,
+    "fields": {
+      "equipment_type": 4,
+      "model": 20,
+      "serial_number": "PUC593827SD",
+      "inventory_number": "237003002467",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 21,
+    "fields": {
+      "category": 11,
+      "name": "SVC",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 14,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "2389136016387L",
+      "inventory_number": "236006006494",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 15,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 3,
+    "fields": {
+      "employee": 3,
+      "system_unit": 3,
+      "monitor": 11,
+      "printer": 12,
+      "ip_phone": 13,
+      "ups": 14,
+      "iss": 15
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 4,
+    "fields": {
+      "fullname": "Омарова С.Н.",
+      "cabinet": "102",
+      "management": 2,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 22,
+    "fields": {
+      "category": 1,
+      "name": "HP ProDesk 763",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 4,
+    "fields": {
+      "model": 22,
+      "serial_number": "CZC2581LTR",
+      "inventory_number": "236006004920",
+      "computer_name": "3901omarova",
+      "account": "s.omarova",
+      "domain": 2,
+      "ip_address": "103.240.4.35",
+      "os": 3,
+      "cpu": 4,
+      "ram_capacity": 5,
+      "disks": 6,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 23,
+    "fields": {
+      "category": 7,
+      "name": "COLD LAST",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 16,
+    "fields": {
+      "equipment_type": 2,
+      "model": 23,
+      "serial_number": "без серийного номера",
+      "inventory_number": "236006005281",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 17,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 18,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 19,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "1503096063000L",
+      "inventory_number": "без инвентарного номера",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 20,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 4,
+    "fields": {
+      "employee": 4,
+      "system_unit": 4,
+      "monitor": 16,
+      "printer": 17,
+      "ip_phone": 18,
+      "ups": 19,
+      "iss": 20
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 5,
+    "fields": {
+      "fullname": "Жанибекова Ж.И.",
+      "cabinet": "102",
+      "management": 2,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 5,
+    "fields": {
+      "model": 14,
+      "serial_number": "без серийного номера",
+      "inventory_number": "236006002319",
+      "computer_name": "3901zhanibekova",
+      "account": "zh.zhanibekova",
+      "domain": 2,
+      "ip_address": "103.240.6.11",
+      "os": 3,
+      "cpu": 19,
+      "ram_capacity": 5,
+      "disks": 6,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 24,
+    "fields": {
+      "category": 7,
+      "name": "LG",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 21,
+    "fields": {
+      "equipment_type": 2,
+      "model": 24,
+      "serial_number": "902UXXQ61347",
+      "inventory_number": "236006001401",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 25,
+    "fields": {
+      "category": 8,
+      "name": "HP LJ 9853",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 22,
+    "fields": {
+      "equipment_type": 3,
+      "model": 25,
+      "serial_number": "VNC5L75630",
+      "inventory_number": "236006005373",
+      "mac_address": null,
+      "print_color": 9,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 23,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 24,
+    "fields": {
+      "equipment_type": 5,
+      "model": 11,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 25,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 5,
+    "fields": {
+      "employee": 5,
+      "system_unit": 5,
+      "monitor": 21,
+      "printer": 22,
+      "ip_phone": 23,
+      "ups": 24,
+      "iss": 25
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 26,
+    "fields": {
+      "category": 1,
+      "name": "Acer Veritron Vero X1932GT",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 27,
+    "fields": {
+      "category": 2,
+      "name": "WORKGROUP",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 28,
+    "fields": {
+      "category": 4,
+      "name": "i5 3470 3.20 GHz",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 29,
+    "fields": {
+      "category": 5,
+      "name": "4",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 6,
+    "fields": {
+      "model": 26,
+      "serial_number": "DTR9XEC01C526005179681",
+      "inventory_number": "236006006718",
+      "computer_name": "3901zhanibekova",
+      "account": "zh.zhanibekova",
+      "domain": 27,
+      "ip_address": "192.168.1.127",
+      "os": 3,
+      "cpu": 28,
+      "ram_capacity": 29,
+      "disks": 6,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 26,
+    "fields": {
+      "equipment_type": 2,
+      "model": 24,
+      "serial_number": "966NDFV9W744",
+      "inventory_number": "236090004814",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 30,
+    "fields": {
+      "category": 8,
+      "name": "HP LJ P0266",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 27,
+    "fields": {
+      "equipment_type": 3,
+      "model": 30,
+      "serial_number": "CNCJ777722",
+      "inventory_number": "236006002551",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 28,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 29,
+    "fields": {
+      "equipment_type": 5,
+      "model": 11,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 31,
+    "fields": {
+      "category": 12,
+      "name": "NOD",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 30,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 31,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 6,
+    "fields": {
+      "employee": 5,
+      "system_unit": 6,
+      "monitor": 26,
+      "printer": 27,
+      "ip_phone": 28,
+      "ups": 29,
+      "iss": 30
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 6,
+    "fields": {
+      "fullname": "Молдабеков Р.М.",
+      "cabinet": "104",
+      "management": 2,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 32,
+    "fields": {
+      "category": 1,
+      "name": "HASEE",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 33,
+    "fields": {
+      "category": 3,
+      "name": "Windows 11",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 34,
+    "fields": {
+      "category": 4,
+      "name": "i5-14400 2.50 GHz",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 35,
+    "fields": {
+      "category": 6,
+      "name": "500",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 7,
+    "fields": {
+      "model": 32,
+      "serial_number": "б\\н",
+      "inventory_number": "236006005461",
+      "computer_name": "3901moldabekov",
+      "account": "r.moldabekov",
+      "domain": 2,
+      "ip_address": "103.240.5.157",
+      "os": 33,
+      "cpu": 34,
+      "ram_capacity": 5,
+      "disks": 35,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 36,
+    "fields": {
+      "category": 7,
+      "name": "BENQ",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 31,
+    "fields": {
+      "equipment_type": 2,
+      "model": 36,
+      "serial_number": "без серийного номера",
+      "inventory_number": "236006005514",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 32,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 9,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 33,
+    "fields": {
+      "equipment_type": 4,
+      "model": 20,
+      "serial_number": "PUC576452PX",
+      "inventory_number": "237030033378",
+      "mac_address": "34D8BFDEHJKJI",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 34,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "8509776013276L",
+      "inventory_number": "236006005460",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 35,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 7,
+    "fields": {
+      "employee": 6,
+      "system_unit": 7,
+      "monitor": 31,
+      "printer": 32,
+      "ip_phone": 33,
+      "ups": 34,
+      "iss": 35
+    }
+  },
+  {
+    "model": "inventory.management",
+    "pk": 3,
+    "fields": {
+      "name": "ОТК ПВТ УА"
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 7,
+    "fields": {
+      "fullname": "Мадиева И.Р.",
+      "cabinet": "105",
+      "management": 3,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 37,
+    "fields": {
+      "category": 1,
+      "name": "SNET 587",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 38,
+    "fields": {
+      "category": 4,
+      "name": "Ryzen 5 5600G 3.90 GHz",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 39,
+    "fields": {
+      "category": 6,
+      "name": "1120",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 8,
+    "fields": {
+      "model": 37,
+      "serial_number": "без серийного номера",
+      "inventory_number": "236006005151",
+      "computer_name": "3901madieva",
+      "account": "i.madieva",
+      "domain": 2,
+      "ip_address": "103.240.7.76",
+      "os": 3,
+      "cpu": 38,
+      "ram_capacity": 5,
+      "disks": 39,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 36,
+    "fields": {
+      "equipment_type": 2,
+      "model": 24,
+      "serial_number": "009UXWE9616",
+      "inventory_number": "236006002706",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 37,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 9,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 38,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 39,
+    "fields": {
+      "equipment_type": 5,
+      "model": 11,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 40,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 8,
+    "fields": {
+      "employee": 7,
+      "system_unit": 8,
+      "monitor": 36,
+      "printer": 37,
+      "ip_phone": 38,
+      "ups": 39,
+      "iss": 40
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 40,
+    "fields": {
+      "category": 1,
+      "name": "ASUS TUF GAMING F81",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 41,
+    "fields": {
+      "category": 4,
+      "name": "Core 2 Duo 3.00 GHz",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 42,
+    "fields": {
+      "category": 6,
+      "name": "300",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 9,
+    "fields": {
+      "model": 40,
+      "serial_number": "N4NRCX03H554707",
+      "inventory_number": "236006005002",
+      "computer_name": "3901madieva",
+      "account": "i.madieva",
+      "domain": 27,
+      "ip_address": "192.168.0.107",
+      "os": 3,
+      "cpu": 41,
+      "ram_capacity": 29,
+      "disks": 42,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 41,
+    "fields": {
+      "equipment_type": 2,
+      "model": 7,
+      "serial_number": "CNK9323XXN",
+      "inventory_number": "236006002733",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 42,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 43,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 44,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "без серийного номера",
+      "inventory_number": "236006006449",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 43,
+    "fields": {
+      "category": 12,
+      "name": "DrWeb",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 45,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 43,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 9,
+    "fields": {
+      "employee": 7,
+      "system_unit": 9,
+      "monitor": 41,
+      "printer": 42,
+      "ip_phone": 43,
+      "ups": 44,
+      "iss": 45
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 44,
+    "fields": {
+      "category": 1,
+      "name": "CROWN",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 45,
+    "fields": {
+      "category": 2,
+      "name": "отключен",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 46,
+    "fields": {
+      "category": 3,
+      "name": "отключен",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 47,
+    "fields": {
+      "category": 4,
+      "name": "отключен",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 48,
+    "fields": {
+      "category": 5,
+      "name": "отключен",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 49,
+    "fields": {
+      "category": 6,
+      "name": "отключен",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 10,
+    "fields": {
+      "model": 44,
+      "serial_number": "без серийного номера",
+      "inventory_number": "236006004044",
+      "computer_name": "3901madieva",
+      "account": "i.madieva",
+      "domain": 45,
+      "ip_address": "отключен",
+      "os": 46,
+      "cpu": 47,
+      "ram_capacity": 48,
+      "disks": 49,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 46,
+    "fields": {
+      "equipment_type": 2,
+      "model": 24,
+      "serial_number": "309UXHB63181",
+      "inventory_number": "236060003495",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 50,
+    "fields": {
+      "category": 8,
+      "name": "HP LJ P2338",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 47,
+    "fields": {
+      "equipment_type": 3,
+      "model": 50,
+      "serial_number": "VNBQC3C3YR",
+      "inventory_number": "236006002564",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 48,
+    "fields": {
+      "equipment_type": 4,
+      "model": 20,
+      "serial_number": "PUC27498ZBI",
+      "inventory_number": "237003002782",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 49,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "2306076619572L",
+      "inventory_number": "236006004360",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 51,
+    "fields": {
+      "category": 12,
+      "name": "-",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 50,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 51,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 10,
+    "fields": {
+      "employee": 7,
+      "system_unit": 10,
+      "monitor": 46,
+      "printer": 47,
+      "ip_phone": 48,
+      "ups": 49,
+      "iss": 50
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 8,
+    "fields": {
+      "fullname": "Даулетова Р.Ж.",
+      "cabinet": "106",
+      "management": 1,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 52,
+    "fields": {
+      "category": 1,
+      "name": "QMAX",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 11,
+    "fields": {
+      "model": 52,
+      "serial_number": "б\\н",
+      "inventory_number": "236006004183",
+      "computer_name": "3901dauletova",
+      "account": "r.dauletova",
+      "domain": 2,
+      "ip_address": "103.240.6.26",
+      "os": 3,
+      "cpu": 4,
+      "ram_capacity": 5,
+      "disks": 6,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 51,
+    "fields": {
+      "equipment_type": 2,
+      "model": 16,
+      "serial_number": "UK0A2225010151",
+      "inventory_number": "236006005263",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 53,
+    "fields": {
+      "category": 8,
+      "name": "HP LJ Pro MFP M288fn",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 52,
+    "fields": {
+      "equipment_type": 3,
+      "model": 53,
+      "serial_number": "WNH4C16224",
+      "inventory_number": "236006005304",
+      "mac_address": null,
+      "print_color": 9,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 53,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 54,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "2321073610273L",
+      "inventory_number": "236006006521",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 55,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 11,
+    "fields": {
+      "employee": 8,
+      "system_unit": 11,
+      "monitor": 51,
+      "printer": 52,
+      "ip_phone": 53,
+      "ups": 54,
+      "iss": 55
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 54,
+    "fields": {
+      "category": 1,
+      "name": "NOMAD",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 55,
+    "fields": {
+      "category": 4,
+      "name": "i3-2348 2.3GHz",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 56,
+    "fields": {
+      "category": 5,
+      "name": "2",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 12,
+    "fields": {
+      "model": 54,
+      "serial_number": "б\\н",
+      "inventory_number": "236006005508",
+      "computer_name": "3901dauletova",
+      "account": "r.dauletova",
+      "domain": 27,
+      "ip_address": "192.168.0.172",
+      "os": 3,
+      "cpu": 55,
+      "ram_capacity": 56,
+      "disks": 35,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 57,
+    "fields": {
+      "category": 7,
+      "name": "PHILIPS",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 56,
+    "fields": {
+      "equipment_type": 2,
+      "model": 57,
+      "serial_number": "UK0A9216009508",
+      "inventory_number": "236006000338",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 58,
+    "fields": {
+      "category": 8,
+      "name": "Lexmark MS680dn",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 57,
+    "fields": {
+      "equipment_type": 3,
+      "model": 58,
+      "serial_number": "б\\н",
+      "inventory_number": "236006005?24",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 58,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 59,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "1306096000071L",
+      "inventory_number": "236006004354",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 59,
+    "fields": {
+      "category": 12,
+      "name": "NOD32",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 60,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 59,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 12,
+    "fields": {
+      "employee": 8,
+      "system_unit": 12,
+      "monitor": 56,
+      "printer": 57,
+      "ip_phone": 58,
+      "ups": 59,
+      "iss": 60
+    }
+  },
+  {
+    "model": "inventory.management",
+    "pk": 4,
+    "fields": {
+      "name": "УИТ"
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 9,
+    "fields": {
+      "fullname": "Жаксылыкова В.П.",
+      "cabinet": "111",
+      "management": 4,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 60,
+    "fields": {
+      "category": 1,
+      "name": "SNET 477",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 61,
+    "fields": {
+      "category": 4,
+      "name": "Intel Core 2 DUO CPU E8400 3.00 GHz",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 62,
+    "fields": {
+      "category": 6,
+      "name": "1500",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 13,
+    "fields": {
+      "model": 60,
+      "serial_number": "б\\н",
+      "inventory_number": "236006002379",
+      "computer_name": "3901zhaksylykova",
+      "account": "v.zhaksylykova",
+      "domain": 2,
+      "ip_address": "103.240.4.107",
+      "os": 3,
+      "cpu": 61,
+      "ram_capacity": 29,
+      "disks": 62,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 63,
+    "fields": {
+      "category": 7,
+      "name": "Maxal",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 61,
+    "fields": {
+      "equipment_type": 2,
+      "model": 63,
+      "serial_number": "б\\н",
+      "inventory_number": "236006004903",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 62,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 63,
+    "fields": {
+      "equipment_type": 4,
+      "model": 20,
+      "serial_number": "PUC87919YWC",
+      "inventory_number": "237003001620",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 64,
+    "fields": {
+      "equipment_type": 5,
+      "model": 11,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 65,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 13,
+    "fields": {
+      "employee": 9,
+      "system_unit": 13,
+      "monitor": 61,
+      "printer": 62,
+      "ip_phone": 63,
+      "ups": 64,
+      "iss": 65
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 64,
+    "fields": {
+      "category": 1,
+      "name": "COMPAQ",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 65,
+    "fields": {
+      "category": 2,
+      "name": "-",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 66,
+    "fields": {
+      "category": 3,
+      "name": "-",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 67,
+    "fields": {
+      "category": 4,
+      "name": "-",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 68,
+    "fields": {
+      "category": 5,
+      "name": "-",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 69,
+    "fields": {
+      "category": 6,
+      "name": "-",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 14,
+    "fields": {
+      "model": 64,
+      "serial_number": "без серийного номера",
+      "inventory_number": "236006005695",
+      "computer_name": "3901zhaksylykova",
+      "account": "v.zhaksylykova",
+      "domain": 65,
+      "ip_address": "-",
+      "os": 66,
+      "cpu": 67,
+      "ram_capacity": 68,
+      "disks": 69,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 70,
+    "fields": {
+      "category": 7,
+      "name": "LOC",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 66,
+    "fields": {
+      "equipment_type": 2,
+      "model": 70,
+      "serial_number": "CNDL8HA763042",
+      "inventory_number": "236006005515",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 67,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 68,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 69,
+    "fields": {
+      "equipment_type": 5,
+      "model": 11,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 70,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 51,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 14,
+    "fields": {
+      "employee": 9,
+      "system_unit": 14,
+      "monitor": 66,
+      "printer": 67,
+      "ip_phone": 68,
+      "ups": 69,
+      "iss": 70
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 15,
+    "fields": {
+      "model": 14,
+      "serial_number": "б\\н",
+      "inventory_number": "236090004902",
+      "computer_name": "3901zhaksylykova",
+      "account": "v.zhaksylykova",
+      "domain": 65,
+      "ip_address": "-",
+      "os": 66,
+      "cpu": 67,
+      "ram_capacity": 68,
+      "disks": 69,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 71,
+    "fields": {
+      "equipment_type": 2,
+      "model": 7,
+      "serial_number": "CNC6130L48",
+      "inventory_number": "236006004936",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 71,
+    "fields": {
+      "category": 8,
+      "name": "HP LJ Pro 414 MFP M447dn",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 72,
+    "fields": {
+      "equipment_type": 3,
+      "model": 71,
+      "serial_number": "CNF7H4F3KH",
+      "inventory_number": "236006005427",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 73,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 74,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "9300376010882L",
+      "inventory_number": "236006006469",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 75,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 51,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 15,
+    "fields": {
+      "employee": 9,
+      "system_unit": 15,
+      "monitor": 71,
+      "printer": 72,
+      "ip_phone": 73,
+      "ups": 74,
+      "iss": 75
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 10,
+    "fields": {
+      "fullname": "Даулетов М.Н.",
+      "cabinet": "111",
+      "management": 4,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 72,
+    "fields": {
+      "category": 1,
+      "name": "HP PRO 0682 SERIES MT",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 16,
+    "fields": {
+      "model": 72,
+      "serial_number": "RUA33989ND",
+      "inventory_number": "236006002992",
+      "computer_name": "3901dauletov",
+      "account": "m.dauletov",
+      "domain": 2,
+      "ip_address": "103.240.5.20",
+      "os": 3,
+      "cpu": 15,
+      "ram_capacity": 5,
+      "disks": 6,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 73,
+    "fields": {
+      "category": 7,
+      "name": "-",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 76,
+    "fields": {
+      "equipment_type": 2,
+      "model": 73,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 77,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 78,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 79,
+    "fields": {
+      "equipment_type": 5,
+      "model": 11,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 80,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 59,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 16,
+    "fields": {
+      "employee": 10,
+      "system_unit": 16,
+      "monitor": 76,
+      "printer": 77,
+      "ip_phone": 78,
+      "ups": 79,
+      "iss": 80
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 74,
+    "fields": {
+      "category": 1,
+      "name": "HP ProDesk 572",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 17,
+    "fields": {
+      "model": 74,
+      "serial_number": "CZC926C409",
+      "inventory_number": "236006005042",
+      "computer_name": "3901dauletov",
+      "account": "m.dauletov",
+      "domain": 2,
+      "ip_address": "103.240.7.86",
+      "os": 3,
+      "cpu": 4,
+      "ram_capacity": 5,
+      "disks": 6,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 81,
+    "fields": {
+      "equipment_type": 2,
+      "model": 7,
+      "serial_number": "CNC895KN4",
+      "inventory_number": "236006004906",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 75,
+    "fields": {
+      "category": 8,
+      "name": "HP LJ P1492",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 82,
+    "fields": {
+      "equipment_type": 3,
+      "model": 75,
+      "serial_number": "236463005534",
+      "inventory_number": "CNCJ874852",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 83,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 84,
+    "fields": {
+      "equipment_type": 5,
+      "model": 11,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 85,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 43,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 17,
+    "fields": {
+      "employee": 10,
+      "system_unit": 17,
+      "monitor": 81,
+      "printer": 82,
+      "ip_phone": 83,
+      "ups": 84,
+      "iss": 85
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 11,
+    "fields": {
+      "fullname": "Кожахметова А.П.",
+      "cabinet": "112",
+      "management": 4,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 18,
+    "fields": {
+      "model": 32,
+      "serial_number": "без серийного номера",
+      "inventory_number": "236006005469",
+      "computer_name": "3901kozhakhmetova",
+      "account": "a.kozhakhmetova",
+      "domain": 2,
+      "ip_address": "103.240.6.87",
+      "os": 3,
+      "cpu": 4,
+      "ram_capacity": 5,
+      "disks": 6,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 86,
+    "fields": {
+      "equipment_type": 2,
+      "model": 7,
+      "serial_number": "CNC7032KLG",
+      "inventory_number": "236006001226",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 87,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 9,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 88,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "34DBFDEJZRPC",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 89,
+    "fields": {
+      "equipment_type": 5,
+      "model": 11,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 90,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 18,
+    "fields": {
+      "employee": 11,
+      "system_unit": 18,
+      "monitor": 86,
+      "printer": 87,
+      "ip_phone": 88,
+      "ups": 89,
+      "iss": 90
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 76,
+    "fields": {
+      "category": 1,
+      "name": "HP ProDesk 252",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 77,
+    "fields": {
+      "category": 2,
+      "name": "office.local",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 78,
+    "fields": {
+      "category": 4,
+      "name": "i7 7700 3.60 GHz",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 79,
+    "fields": {
+      "category": 5,
+      "name": "16 GB",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 80,
+    "fields": {
+      "category": 6,
+      "name": "740",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 19,
+    "fields": {
+      "model": 76,
+      "serial_number": "CZC65648LV",
+      "inventory_number": "236006004840",
+      "computer_name": "3901kozhakhmetova",
+      "account": "a.kozhakhmetova",
+      "domain": 77,
+      "ip_address": "192.168.1.69",
+      "os": 3,
+      "cpu": 78,
+      "ram_capacity": 79,
+      "disks": 80,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 91,
+    "fields": {
+      "equipment_type": 2,
+      "model": 70,
+      "serial_number": "GNDL8HA039245",
+      "inventory_number": "236006005508",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 81,
+    "fields": {
+      "category": 8,
+      "name": "HP LaserJet Pro M785a",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 92,
+    "fields": {
+      "equipment_type": 3,
+      "model": 81,
+      "serial_number": "VNF5164296",
+      "inventory_number": "236006005364",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 93,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 94,
+    "fields": {
+      "equipment_type": 5,
+      "model": 11,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 95,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 59,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 19,
+    "fields": {
+      "employee": 11,
+      "system_unit": 19,
+      "monitor": 91,
+      "printer": 92,
+      "ip_phone": 93,
+      "ups": 94,
+      "iss": 95
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 12,
+    "fields": {
+      "fullname": "Алимжанова Б.Е.",
+      "cabinet": "113",
+      "management": 4,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 82,
+    "fields": {
+      "category": 1,
+      "name": "SNET 277",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 83,
+    "fields": {
+      "category": 4,
+      "name": "I5-9600 CPU 3.10 GHz",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 20,
+    "fields": {
+      "model": 82,
+      "serial_number": "б\\н",
+      "inventory_number": "236006005282",
+      "computer_name": "3901alimzhanova",
+      "account": "b.alimzhanova",
+      "domain": 2,
+      "ip_address": "103.240.5.111",
+      "os": 3,
+      "cpu": 83,
+      "ram_capacity": 5,
+      "disks": 6,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 96,
+    "fields": {
+      "equipment_type": 2,
+      "model": 73,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 97,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 98,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 99,
+    "fields": {
+      "equipment_type": 5,
+      "model": 11,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 100,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 20,
+    "fields": {
+      "employee": 12,
+      "system_unit": 20,
+      "monitor": 96,
+      "printer": 97,
+      "ip_phone": 98,
+      "ups": 99,
+      "iss": 100
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 84,
+    "fields": {
+      "category": 1,
+      "name": "NEC",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 85,
+    "fields": {
+      "category": 4,
+      "name": "i5-11400H 2.70 GHz",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 86,
+    "fields": {
+      "category": 5,
+      "name": "16",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 21,
+    "fields": {
+      "model": 84,
+      "serial_number": "без серийного номера",
+      "inventory_number": "236006000389",
+      "computer_name": "3901alimzhanova",
+      "account": "b.alimzhanova",
+      "domain": 77,
+      "ip_address": "192.168.1.124",
+      "os": 3,
+      "cpu": 85,
+      "ram_capacity": 86,
+      "disks": 35,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 101,
+    "fields": {
+      "equipment_type": 2,
+      "model": 24,
+      "serial_number": "346UXVW2D878",
+      "inventory_number": "2360600002499",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 102,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 103,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 104,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "1309078581539L",
+      "inventory_number": "236006006527",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 105,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 59,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 21,
+    "fields": {
+      "employee": 12,
+      "system_unit": 21,
+      "monitor": 101,
+      "printer": 102,
+      "ip_phone": 103,
+      "ups": 104,
+      "iss": 105
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 13,
+    "fields": {
+      "fullname": "Оразбаев В.С.",
+      "cabinet": "113",
+      "management": 4,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 87,
+    "fields": {
+      "category": 1,
+      "name": "SNET 330",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 88,
+    "fields": {
+      "category": 4,
+      "name": "i5 65003.20 GHz",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 22,
+    "fields": {
+      "model": 87,
+      "serial_number": "б\\н",
+      "inventory_number": "236006005702",
+      "computer_name": "3901orazbaev",
+      "account": "v.orazbaev",
+      "domain": 2,
+      "ip_address": "103.240.5.15",
+      "os": 3,
+      "cpu": 88,
+      "ram_capacity": 5,
+      "disks": 35,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 89,
+    "fields": {
+      "category": 7,
+      "name": "Acer V812Y",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 106,
+    "fields": {
+      "equipment_type": 2,
+      "model": 89,
+      "serial_number": "MMTVHEE01N9291C57B3W61",
+      "inventory_number": "236006006724",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 107,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 9,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 108,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "E8EDF3AF96B3",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 109,
+    "fields": {
+      "equipment_type": 5,
+      "model": 11,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 110,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 22,
+    "fields": {
+      "employee": 13,
+      "system_unit": 22,
+      "monitor": 106,
+      "printer": 107,
+      "ip_phone": 108,
+      "ups": 109,
+      "iss": 110
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 23,
+    "fields": {
+      "model": 32,
+      "serial_number": "б\\н",
+      "inventory_number": "236006005471",
+      "computer_name": "3901orazbaev",
+      "account": "v.orazbaev",
+      "domain": 27,
+      "ip_address": "192.168.1.68",
+      "os": 3,
+      "cpu": 15,
+      "ram_capacity": 5,
+      "disks": 6,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 111,
+    "fields": {
+      "equipment_type": 2,
+      "model": 7,
+      "serial_number": "CNC84126YF",
+      "inventory_number": "236006004942",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 112,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 113,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 114,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "1308941095",
+      "inventory_number": "без инвентарного номера",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 115,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 59,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 23,
+    "fields": {
+      "employee": 13,
+      "system_unit": 23,
+      "monitor": 111,
+      "printer": 112,
+      "ip_phone": 113,
+      "ups": 114,
+      "iss": 115
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 14,
+    "fields": {
+      "fullname": "Байжанова Ж.М.",
+      "cabinet": "113",
+      "management": 4,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 90,
+    "fields": {
+      "category": 4,
+      "name": "Core 2 Duo E8400 3.00 GHz",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 24,
+    "fields": {
+      "model": 54,
+      "serial_number": "без серийного номера",
+      "inventory_number": "236006000411",
+      "computer_name": "3901bayzhanova",
+      "account": "zh.bayzhanova",
+      "domain": 2,
+      "ip_address": "103.240.7.69",
+      "os": 3,
+      "cpu": 90,
+      "ram_capacity": 29,
+      "disks": 42,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 116,
+    "fields": {
+      "equipment_type": 2,
+      "model": 16,
+      "serial_number": "UKOA2626035955",
+      "inventory_number": "236006005765",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 117,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 118,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 119,
+    "fields": {
+      "equipment_type": 5,
+      "model": 11,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 120,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 24,
+    "fields": {
+      "employee": 14,
+      "system_unit": 24,
+      "monitor": 116,
+      "printer": 117,
+      "ip_phone": 118,
+      "ups": 119,
+      "iss": 120
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 91,
+    "fields": {
+      "category": 4,
+      "name": "I5-6500 CPU 3.20 GHz",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 92,
+    "fields": {
+      "category": 6,
+      "name": "250",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 25,
+    "fields": {
+      "model": 32,
+      "serial_number": "без серийного номера",
+      "inventory_number": "236006005457",
+      "computer_name": "3901bayzhanova",
+      "account": "zh.bayzhanova",
+      "domain": 77,
+      "ip_address": "192.168.1.119",
+      "os": 3,
+      "cpu": 91,
+      "ram_capacity": 5,
+      "disks": 92,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 93,
+    "fields": {
+      "category": 7,
+      "name": "Acer V031Y",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 121,
+    "fields": {
+      "equipment_type": 2,
+      "model": 93,
+      "serial_number": "MMTVHEE01N5271C7F63W28",
+      "inventory_number": "236006006762",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 94,
+    "fields": {
+      "category": 8,
+      "name": "Canon MF314dw",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 122,
+    "fields": {
+      "equipment_type": 3,
+      "model": 94,
+      "serial_number": "7UX14114",
+      "inventory_number": "236006005610",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 123,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 124,
+    "fields": {
+      "equipment_type": 5,
+      "model": 11,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 125,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 59,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 25,
+    "fields": {
+      "employee": 14,
+      "system_unit": 25,
+      "monitor": 121,
+      "printer": 122,
+      "ip_phone": 123,
+      "ups": 124,
+      "iss": 125
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 15,
+    "fields": {
+      "fullname": "Тлеубаева К.П.",
+      "cabinet": "203",
+      "management": 2,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 95,
+    "fields": {
+      "category": 1,
+      "name": "Acer Veritron Vero X6409GT",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 26,
+    "fields": {
+      "model": 95,
+      "serial_number": "DTR1XEC41C565002169640",
+      "inventory_number": "236006006687",
+      "computer_name": "3901tleubaeva",
+      "account": "k.tleubaeva",
+      "domain": 2,
+      "ip_address": "103.240.4.104",
+      "os": 3,
+      "cpu": 38,
+      "ram_capacity": 5,
+      "disks": 39,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 126,
+    "fields": {
+      "equipment_type": 2,
+      "model": 73,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 127,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 9,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 128,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 129,
+    "fields": {
+      "equipment_type": 5,
+      "model": 11,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 130,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 26,
+    "fields": {
+      "employee": 15,
+      "system_unit": 26,
+      "monitor": 126,
+      "printer": 127,
+      "ip_phone": 128,
+      "ups": 129,
+      "iss": 130
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 96,
+    "fields": {
+      "category": 5,
+      "name": "4 GB",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 97,
+    "fields": {
+      "category": 6,
+      "name": "80",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 27,
+    "fields": {
+      "model": 14,
+      "serial_number": "б\\н",
+      "inventory_number": "236090004901",
+      "computer_name": "3901tleubaeva",
+      "account": "k.tleubaeva",
+      "domain": 77,
+      "ip_address": "192.168.0.131",
+      "os": 3,
+      "cpu": 28,
+      "ram_capacity": 96,
+      "disks": 97,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 131,
+    "fields": {
+      "equipment_type": 2,
+      "model": 24,
+      "serial_number": "904UXGL3Z369",
+      "inventory_number": "236006002992",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 98,
+    "fields": {
+      "category": 8,
+      "name": "HP LaserJet 6399",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 132,
+    "fields": {
+      "equipment_type": 3,
+      "model": 98,
+      "serial_number": "CNSK705100",
+      "inventory_number": "236006005399",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 133,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 134,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "без серийного номера",
+      "inventory_number": "236006006463",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 135,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 59,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 27,
+    "fields": {
+      "employee": 15,
+      "system_unit": 27,
+      "monitor": 131,
+      "printer": 132,
+      "ip_phone": 133,
+      "ups": 134,
+      "iss": 135
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 16,
+    "fields": {
+      "fullname": "Утегенова Ж.Р.",
+      "cabinet": "203",
+      "management": 2,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 99,
+    "fields": {
+      "category": 1,
+      "name": "SNET 986",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 28,
+    "fields": {
+      "model": 99,
+      "serial_number": "б\\н",
+      "inventory_number": "236006005294",
+      "computer_name": "3901utegenova",
+      "account": "zh.utegenova",
+      "domain": 2,
+      "ip_address": "103.240.4.132",
+      "os": 3,
+      "cpu": 38,
+      "ram_capacity": 5,
+      "disks": 39,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 100,
+    "fields": {
+      "category": 7,
+      "name": "Acer V056Y",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 136,
+    "fields": {
+      "equipment_type": 2,
+      "model": 100,
+      "serial_number": "MMTVHEE21N5261C4293W31",
+      "inventory_number": "236006006789",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 101,
+    "fields": {
+      "category": 8,
+      "name": "Xerox B688",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 137,
+    "fields": {
+      "equipment_type": 3,
+      "model": 101,
+      "serial_number": "3437200771",
+      "inventory_number": "236006002690",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 138,
+    "fields": {
+      "equipment_type": 4,
+      "model": 20,
+      "serial_number": "PUC5788331H",
+      "inventory_number": "237003002572",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 139,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "2209176017160L",
+      "inventory_number": "236006004352",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 140,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 28,
+    "fields": {
+      "employee": 16,
+      "system_unit": 28,
+      "monitor": 136,
+      "printer": 137,
+      "ip_phone": 138,
+      "ups": 139,
+      "iss": 140
+    }
+  },
+  {
+    "model": "inventory.management",
+    "pk": 5,
+    "fields": {
+      "name": "УРНД"
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 17,
+    "fields": {
+      "fullname": "Шарипов Д.К.",
+      "cabinet": "204",
+      "management": 5,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 102,
+    "fields": {
+      "category": 1,
+      "name": "HP ProDesk 755",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 29,
+    "fields": {
+      "model": 102,
+      "serial_number": "CZC7345M5R",
+      "inventory_number": "236006002573",
+      "computer_name": "3901sharipov",
+      "account": "d.sharipov",
+      "domain": 2,
+      "ip_address": "103.240.5.49",
+      "os": 3,
+      "cpu": 38,
+      "ram_capacity": 5,
+      "disks": 39,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 141,
+    "fields": {
+      "equipment_type": 2,
+      "model": 7,
+      "serial_number": "CNC8283KL3",
+      "inventory_number": "236006001225",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 142,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 143,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 144,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "без серийного номера",
+      "inventory_number": "236006000333",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 145,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 29,
+    "fields": {
+      "employee": 17,
+      "system_unit": 29,
+      "monitor": 141,
+      "printer": 142,
+      "ip_phone": 143,
+      "ups": 144,
+      "iss": 145
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 18,
+    "fields": {
+      "fullname": "Абдрахманова Р.Д.",
+      "cabinet": "204",
+      "management": 5,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 103,
+    "fields": {
+      "category": 1,
+      "name": "MAXAL",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 30,
+    "fields": {
+      "model": 103,
+      "serial_number": "б\\н",
+      "inventory_number": "236006005281",
+      "computer_name": "3901abdrakhmanova",
+      "account": "r.abdrakhmanova",
+      "domain": 2,
+      "ip_address": "103.240.5.68",
+      "os": 3,
+      "cpu": 38,
+      "ram_capacity": 5,
+      "disks": 39,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 146,
+    "fields": {
+      "equipment_type": 2,
+      "model": 16,
+      "serial_number": "Uk4A2226057264",
+      "inventory_number": "236006005151",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 147,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 9,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 148,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "34DBFDEGGH2G",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 149,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "2329075010960L",
+      "inventory_number": "236006006520",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 150,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 30,
+    "fields": {
+      "employee": 18,
+      "system_unit": 30,
+      "monitor": 146,
+      "printer": 147,
+      "ip_phone": 148,
+      "ups": 149,
+      "iss": 150
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 19,
+    "fields": {
+      "fullname": "Молдабекова Т.Ж.",
+      "cabinet": "205",
+      "management": 5,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 104,
+    "fields": {
+      "category": 1,
+      "name": "-",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 31,
+    "fields": {
+      "model": 104,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "computer_name": "3901moldabekova",
+      "account": "t.moldabekova",
+      "domain": 2,
+      "ip_address": "103.240.5.68",
+      "os": 3,
+      "cpu": 38,
+      "ram_capacity": 5,
+      "disks": 39,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 151,
+    "fields": {
+      "equipment_type": 2,
+      "model": 24,
+      "serial_number": "393RAET8K558",
+      "inventory_number": "236006001335",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 152,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 9,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 153,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 154,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "без серийного номера",
+      "inventory_number": "236006004273",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 155,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 31,
+    "fields": {
+      "employee": 19,
+      "system_unit": 31,
+      "monitor": 151,
+      "printer": 152,
+      "ip_phone": 153,
+      "ups": 154,
+      "iss": 155
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 20,
+    "fields": {
+      "fullname": "Утегенов С.Р.",
+      "cabinet": "205",
+      "management": 5,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 105,
+    "fields": {
+      "category": 1,
+      "name": "SNET 528",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 32,
+    "fields": {
+      "model": 105,
+      "serial_number": "б\\н",
+      "inventory_number": "236006005699",
+      "computer_name": "3901utegenov",
+      "account": "s.utegenov",
+      "domain": 2,
+      "ip_address": "103.240.4.133",
+      "os": 3,
+      "cpu": 88,
+      "ram_capacity": 5,
+      "disks": 6,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 106,
+    "fields": {
+      "category": 7,
+      "name": "Acer V901Y",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 156,
+    "fields": {
+      "equipment_type": 2,
+      "model": 106,
+      "serial_number": "MMTVHEE51N5271C7153W00",
+      "inventory_number": "236006006787",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 107,
+    "fields": {
+      "category": 8,
+      "name": "HP LJ P0192",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 157,
+    "fields": {
+      "equipment_type": 3,
+      "model": 107,
+      "serial_number": "CNBW12F1GT",
+      "inventory_number": "236006000372",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 158,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 159,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "без серийного номера",
+      "inventory_number": "23600600972",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 160,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 32,
+    "fields": {
+      "employee": 20,
+      "system_unit": 32,
+      "monitor": 156,
+      "printer": 157,
+      "ip_phone": 158,
+      "ups": 159,
+      "iss": 160
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 108,
+    "fields": {
+      "category": 1,
+      "name": "SNET 494",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 33,
+    "fields": {
+      "model": 108,
+      "serial_number": "б\\н",
+      "inventory_number": "236006005156",
+      "computer_name": "3901moldabekova",
+      "account": "t.moldabekova",
+      "domain": 27,
+      "ip_address": "192.168.0.122",
+      "os": 3,
+      "cpu": 90,
+      "ram_capacity": 56,
+      "disks": 92,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 161,
+    "fields": {
+      "equipment_type": 2,
+      "model": 16,
+      "serial_number": "UK0A0226000109",
+      "inventory_number": "236006005507",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 109,
+    "fields": {
+      "category": 8,
+      "name": "HP LJ P3039N",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 162,
+    "fields": {
+      "equipment_type": 3,
+      "model": 109,
+      "serial_number": "CNCJ619037",
+      "inventory_number": "236006003722",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 163,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 164,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "2310106010275L",
+      "inventory_number": "без инвентарного номера",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 165,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 59,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 33,
+    "fields": {
+      "employee": 19,
+      "system_unit": 33,
+      "monitor": 161,
+      "printer": 162,
+      "ip_phone": 163,
+      "ups": 164,
+      "iss": 165
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 21,
+    "fields": {
+      "fullname": "Ержанова З.И.",
+      "cabinet": "206",
+      "management": 5,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 110,
+    "fields": {
+      "category": 1,
+      "name": "HP ProDesk 196",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 34,
+    "fields": {
+      "model": 110,
+      "serial_number": "CZC1027258",
+      "inventory_number": "236006004906",
+      "computer_name": "3901erzhanova",
+      "account": "z.erzhanova",
+      "domain": 2,
+      "ip_address": "103.240.5.98",
+      "os": 33,
+      "cpu": 34,
+      "ram_capacity": 5,
+      "disks": 35,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 111,
+    "fields": {
+      "category": 7,
+      "name": "Acer V538Y",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 166,
+    "fields": {
+      "equipment_type": 2,
+      "model": 111,
+      "serial_number": "MMTVHEE02N5292C85D3W07",
+      "inventory_number": "236006006785",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 112,
+    "fields": {
+      "category": 8,
+      "name": "HP LJ P4356",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 167,
+    "fields": {
+      "equipment_type": 3,
+      "model": 112,
+      "serial_number": "VNBQD5K12T",
+      "inventory_number": "236006002695",
+      "mac_address": null,
+      "print_color": 9,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 168,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "34DBFDE04UIJ",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 169,
+    "fields": {
+      "equipment_type": 5,
+      "model": 11,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 170,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 34,
+    "fields": {
+      "employee": 21,
+      "system_unit": 34,
+      "monitor": 166,
+      "printer": 167,
+      "ip_phone": 168,
+      "ups": 169,
+      "iss": 170
+    }
+  },
+  {
+    "model": "inventory.management",
+    "pk": 6,
+    "fields": {
+      "name": "ОТКПВТ"
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 22,
+    "fields": {
+      "fullname": "Калиева Ж.Ж.",
+      "cabinet": "207",
+      "management": 6,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 113,
+    "fields": {
+      "category": 1,
+      "name": "SNET 325",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 35,
+    "fields": {
+      "model": 113,
+      "serial_number": "б\\н",
+      "inventory_number": "236006005263",
+      "computer_name": "3901kalieva",
+      "account": "zh.kalieva",
+      "domain": 2,
+      "ip_address": "103.240.4.195",
+      "os": 3,
+      "cpu": 4,
+      "ram_capacity": 5,
+      "disks": 6,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 171,
+    "fields": {
+      "equipment_type": 2,
+      "model": 24,
+      "serial_number": "904RAPW2K485",
+      "inventory_number": "236006004905",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 172,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 173,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "34DBFDE7AH0B",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 174,
+    "fields": {
+      "equipment_type": 5,
+      "model": 11,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 175,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 35,
+    "fields": {
+      "employee": 22,
+      "system_unit": 35,
+      "monitor": 171,
+      "printer": 172,
+      "ip_phone": 173,
+      "ups": 174,
+      "iss": 175
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 36,
+    "fields": {
+      "model": 54,
+      "serial_number": "б\\н",
+      "inventory_number": "236006005512",
+      "computer_name": "3901kalieva",
+      "account": "zh.kalieva",
+      "domain": 77,
+      "ip_address": "192.168.1.139",
+      "os": 3,
+      "cpu": 28,
+      "ram_capacity": 5,
+      "disks": 35,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 176,
+    "fields": {
+      "equipment_type": 2,
+      "model": 7,
+      "serial_number": "CNK3724XWY",
+      "inventory_number": "236006004183",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 177,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 178,
+    "fields": {
+      "equipment_type": 4,
+      "model": 20,
+      "serial_number": "PUC67330263",
+      "inventory_number": "237030033379",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 179,
+    "fields": {
+      "equipment_type": 5,
+      "model": 11,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 180,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 43,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 36,
+    "fields": {
+      "employee": 22,
+      "system_unit": 36,
+      "monitor": 176,
+      "printer": 177,
+      "ip_phone": 178,
+      "ups": 179,
+      "iss": 180
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 114,
+    "fields": {
+      "category": 1,
+      "name": "HP ProDesk 148",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 115,
+    "fields": {
+      "category": 4,
+      "name": "i7-4510U 2.60 GHz",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 116,
+    "fields": {
+      "category": 6,
+      "name": "200",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 37,
+    "fields": {
+      "model": 114,
+      "serial_number": "CZC789С1GH",
+      "inventory_number": "236006005279",
+      "computer_name": "3901kalieva",
+      "account": "zh.kalieva",
+      "domain": 77,
+      "ip_address": "192.168.0.139",
+      "os": 3,
+      "cpu": 115,
+      "ram_capacity": 5,
+      "disks": 116,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 117,
+    "fields": {
+      "category": 7,
+      "name": "Fujitsu Siemens",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 181,
+    "fields": {
+      "equipment_type": 2,
+      "model": 117,
+      "serial_number": "YE3L246880",
+      "inventory_number": "236006003789",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 182,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 183,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 184,
+    "fields": {
+      "equipment_type": 5,
+      "model": 11,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 185,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 59,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 37,
+    "fields": {
+      "employee": 22,
+      "system_unit": 37,
+      "monitor": 181,
+      "printer": 182,
+      "ip_phone": 183,
+      "ups": 184,
+      "iss": 185
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 23,
+    "fields": {
+      "fullname": "Абишев В.А.",
+      "cabinet": "207",
+      "management": 6,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 118,
+    "fields": {
+      "category": 1,
+      "name": "HP Pro 9465",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 38,
+    "fields": {
+      "model": 118,
+      "serial_number": "CZC6500Q15",
+      "inventory_number": "236006002660",
+      "computer_name": "3901abishev",
+      "account": "v.abishev",
+      "domain": 2,
+      "ip_address": "103.240.7.132",
+      "os": 3,
+      "cpu": 38,
+      "ram_capacity": 5,
+      "disks": 39,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 186,
+    "fields": {
+      "equipment_type": 2,
+      "model": 16,
+      "serial_number": "UK9A2222010062",
+      "inventory_number": "236006005762",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 187,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 188,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 189,
+    "fields": {
+      "equipment_type": 5,
+      "model": 11,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 190,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 38,
+    "fields": {
+      "employee": 23,
+      "system_unit": 38,
+      "monitor": 186,
+      "printer": 187,
+      "ip_phone": 188,
+      "ups": 189,
+      "iss": 190
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 119,
+    "fields": {
+      "category": 1,
+      "name": "HP Probook",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 120,
+    "fields": {
+      "category": 6,
+      "name": "240",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 39,
+    "fields": {
+      "model": 119,
+      "serial_number": "б\\н",
+      "inventory_number": "236006005682",
+      "computer_name": "3901abishev",
+      "account": "v.abishev",
+      "domain": 77,
+      "ip_address": "192.168.0.85",
+      "os": 3,
+      "cpu": 90,
+      "ram_capacity": 56,
+      "disks": 120,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 191,
+    "fields": {
+      "equipment_type": 2,
+      "model": 24,
+      "serial_number": "176NDPH2X289",
+      "inventory_number": "236006005155",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 192,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 193,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 194,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "1506896019162",
+      "inventory_number": "236006004293",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 195,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 59,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 39,
+    "fields": {
+      "employee": 23,
+      "system_unit": 39,
+      "monitor": 191,
+      "printer": 192,
+      "ip_phone": 193,
+      "ups": 194,
+      "iss": 195
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 24,
+    "fields": {
+      "fullname": "Ибраев Т.Д.",
+      "cabinet": "207",
+      "management": 6,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 121,
+    "fields": {
+      "category": 1,
+      "name": "Acer Veritron Vero X7681GT",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 122,
+    "fields": {
+      "category": 4,
+      "name": "5 9500 3.00 GHz",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 123,
+    "fields": {
+      "category": 6,
+      "name": "1240",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 40,
+    "fields": {
+      "model": 121,
+      "serial_number": "DTR1XEC01C5261448A6600",
+      "inventory_number": "236006006690",
+      "computer_name": "3901ibraev",
+      "account": "t.ibraev",
+      "domain": 2,
+      "ip_address": "103.240.4.52",
+      "os": 3,
+      "cpu": 122,
+      "ram_capacity": 5,
+      "disks": 123,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 124,
+    "fields": {
+      "category": 7,
+      "name": "KIS",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 196,
+    "fields": {
+      "equipment_type": 2,
+      "model": 124,
+      "serial_number": "2776XFT2901446",
+      "inventory_number": "236006006000",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 197,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 9,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 198,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 199,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "2309076370174L",
+      "inventory_number": "236006006462",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 200,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 40,
+    "fields": {
+      "employee": 24,
+      "system_unit": 40,
+      "monitor": 196,
+      "printer": 197,
+      "ip_phone": 198,
+      "ups": 199,
+      "iss": 200
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 125,
+    "fields": {
+      "category": 3,
+      "name": "Windows XP",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 126,
+    "fields": {
+      "category": 4,
+      "name": "ntel Core 2 Duo 3.00 GHz",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 127,
+    "fields": {
+      "category": 6,
+      "name": "320",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 41,
+    "fields": {
+      "model": 14,
+      "serial_number": "без серийного номера",
+      "inventory_number": "236060002637",
+      "computer_name": "3901ibraev",
+      "account": "t.ibraev",
+      "domain": 2,
+      "ip_address": "103.240.7.200",
+      "os": 125,
+      "cpu": 126,
+      "ram_capacity": 56,
+      "disks": 127,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 201,
+    "fields": {
+      "equipment_type": 2,
+      "model": 16,
+      "serial_number": "UK0A2285471082",
+      "inventory_number": "236006005282",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 202,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 203,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 204,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "без серийного номера",
+      "inventory_number": "236006006471",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 205,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 41,
+    "fields": {
+      "employee": 24,
+      "system_unit": 41,
+      "monitor": 201,
+      "printer": 202,
+      "ip_phone": 203,
+      "ups": 204,
+      "iss": 205
+    }
+  },
+  {
+    "model": "inventory.management",
+    "pk": 7,
+    "fields": {
+      "name": "УГУ"
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 25,
+    "fields": {
+      "fullname": "Аскаров И.Н.",
+      "cabinet": "208",
+      "management": 7,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 128,
+    "fields": {
+      "category": 4,
+      "name": "i5 9500 3.00 GHz",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 42,
+    "fields": {
+      "model": 32,
+      "serial_number": "без серийного номера",
+      "inventory_number": "236006005470",
+      "computer_name": "3901askarov",
+      "account": "i.askarov",
+      "domain": 2,
+      "ip_address": "103.240.4.49",
+      "os": 3,
+      "cpu": 128,
+      "ram_capacity": 5,
+      "disks": 123,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 206,
+    "fields": {
+      "equipment_type": 2,
+      "model": 7,
+      "serial_number": "CNC1916JTH",
+      "inventory_number": "236006000341",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 207,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 9,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 208,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 209,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "7208733461506L",
+      "inventory_number": "236006004283",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 210,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 42,
+    "fields": {
+      "employee": 25,
+      "system_unit": 42,
+      "monitor": 206,
+      "printer": 207,
+      "ip_phone": 208,
+      "ups": 209,
+      "iss": 210
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 26,
+    "fields": {
+      "fullname": "Касымов Е.Д.",
+      "cabinet": "208",
+      "management": 7,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 129,
+    "fields": {
+      "category": 1,
+      "name": "Acer Veritron Vero X8151GT",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 43,
+    "fields": {
+      "model": 129,
+      "serial_number": "DTR1XEC01C5800349D9630",
+      "inventory_number": "236006006688",
+      "computer_name": "3901kasymov",
+      "account": "e.kasymov",
+      "domain": 2,
+      "ip_address": "103.240.4.155",
+      "os": 3,
+      "cpu": 15,
+      "ram_capacity": 5,
+      "disks": 6,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 211,
+    "fields": {
+      "equipment_type": 2,
+      "model": 7,
+      "serial_number": "CNK3256XP3",
+      "inventory_number": "236006004185",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 212,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 9,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 213,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 214,
+    "fields": {
+      "equipment_type": 5,
+      "model": 11,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 215,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 43,
+    "fields": {
+      "employee": 26,
+      "system_unit": 43,
+      "monitor": 211,
+      "printer": 212,
+      "ip_phone": 213,
+      "ups": 214,
+      "iss": 215
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 27,
+    "fields": {
+      "fullname": "Бекенова В.Е.",
+      "cabinet": "208",
+      "management": 7,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 44,
+    "fields": {
+      "model": 52,
+      "serial_number": "без серийного номера",
+      "inventory_number": "236006005001",
+      "computer_name": "3901bekenova",
+      "account": "v.bekenova",
+      "domain": 2,
+      "ip_address": "103.240.5.6",
+      "os": 33,
+      "cpu": 34,
+      "ram_capacity": 5,
+      "disks": 35,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 130,
+    "fields": {
+      "category": 7,
+      "name": "Benq",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 216,
+    "fields": {
+      "equipment_type": 2,
+      "model": 130,
+      "serial_number": "б\\н",
+      "inventory_number": "236006001347",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 217,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 9,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 218,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "34DBFDEU31WR",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 219,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "3336096510378L",
+      "inventory_number": "236006004365",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 220,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 44,
+    "fields": {
+      "employee": 27,
+      "system_unit": 44,
+      "monitor": 216,
+      "printer": 217,
+      "ip_phone": 218,
+      "ups": 219,
+      "iss": 220
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 131,
+    "fields": {
+      "category": 1,
+      "name": "HP ProDesk 748",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 45,
+    "fields": {
+      "model": 131,
+      "serial_number": "CZC504C3LG",
+      "inventory_number": "236006004937",
+      "computer_name": "3901bekenova",
+      "account": "v.bekenova",
+      "domain": 2,
+      "ip_address": "103.240.5.26",
+      "os": 3,
+      "cpu": 90,
+      "ram_capacity": 29,
+      "disks": 35,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 221,
+    "fields": {
+      "equipment_type": 2,
+      "model": 57,
+      "serial_number": "UK2A2295071954",
+      "inventory_number": "236006000339",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 132,
+    "fields": {
+      "category": 8,
+      "name": "Xerox VersaLink B9712",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 222,
+    "fields": {
+      "equipment_type": 3,
+      "model": 132,
+      "serial_number": "-",
+      "inventory_number": "236008000102",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 223,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 224,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "без серийного номера",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 225,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 45,
+    "fields": {
+      "employee": 27,
+      "system_unit": 45,
+      "monitor": 221,
+      "printer": 222,
+      "ip_phone": 223,
+      "ups": 224,
+      "iss": 225
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 46,
+    "fields": {
+      "model": 104,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "computer_name": "3901bekenova",
+      "account": "v.bekenova",
+      "domain": 2,
+      "ip_address": "103.240.4.95",
+      "os": 3,
+      "cpu": 90,
+      "ram_capacity": 29,
+      "disks": 35,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 226,
+    "fields": {
+      "equipment_type": 2,
+      "model": 7,
+      "serial_number": "CNK2469XPS",
+      "inventory_number": "236006004186",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 227,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 228,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 229,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "без серийного номера",
+      "inventory_number": "236006004287",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 230,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 46,
+    "fields": {
+      "employee": 27,
+      "system_unit": 46,
+      "monitor": 226,
+      "printer": 227,
+      "ip_phone": 228,
+      "ups": 229,
+      "iss": 230
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 47,
+    "fields": {
+      "model": 14,
+      "serial_number": "без серийного номера",
+      "inventory_number": "236060002508",
+      "computer_name": "3901bekenova",
+      "account": "v.bekenova",
+      "domain": 2,
+      "ip_address": "103.240.4.79",
+      "os": 3,
+      "cpu": 90,
+      "ram_capacity": 29,
+      "disks": 35,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 231,
+    "fields": {
+      "equipment_type": 2,
+      "model": 24,
+      "serial_number": "207UXPH29319",
+      "inventory_number": "236006004212",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 232,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 233,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 234,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "2229076008530L",
+      "inventory_number": "236006000567",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 235,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 47,
+    "fields": {
+      "employee": 27,
+      "system_unit": 47,
+      "monitor": 231,
+      "printer": 232,
+      "ip_phone": 233,
+      "ups": 234,
+      "iss": 235
+    }
+  },
+  {
+    "model": "inventory.management",
+    "pk": 8,
+    "fields": {
+      "name": "УА"
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 28,
+    "fields": {
+      "fullname": "Баймуханова Д.Б.",
+      "cabinet": "209",
+      "management": 8,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 48,
+    "fields": {
+      "model": 14,
+      "serial_number": "б\\н",
+      "inventory_number": "236006002379",
+      "computer_name": "3901baymukhanova",
+      "account": "d.baymukhanova",
+      "domain": 2,
+      "ip_address": "103.240.6.72",
+      "os": 33,
+      "cpu": 34,
+      "ram_capacity": 5,
+      "disks": 35,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 236,
+    "fields": {
+      "equipment_type": 2,
+      "model": 70,
+      "serial_number": "GNDL2HA022339",
+      "inventory_number": "236006005512",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 237,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 238,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 239,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "9309006011824L",
+      "inventory_number": "236006006451",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 240,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 48,
+    "fields": {
+      "employee": 28,
+      "system_unit": 48,
+      "monitor": 236,
+      "printer": 237,
+      "ip_phone": 238,
+      "ups": 239,
+      "iss": 240
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 29,
+    "fields": {
+      "fullname": "Болатова Т.С.",
+      "cabinet": "209",
+      "management": 8,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 133,
+    "fields": {
+      "category": 1,
+      "name": "Acer Veritron Vero X7371GT",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 49,
+    "fields": {
+      "model": 133,
+      "serial_number": "DTR9XEC11C526304619600",
+      "inventory_number": "236006006692",
+      "computer_name": "3901bolatova",
+      "account": "t.bolatova",
+      "domain": 2,
+      "ip_address": "103.240.7.75",
+      "os": 33,
+      "cpu": 34,
+      "ram_capacity": 5,
+      "disks": 35,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 241,
+    "fields": {
+      "equipment_type": 2,
+      "model": 7,
+      "serial_number": "CNC7839KML",
+      "inventory_number": "236006002728",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 134,
+    "fields": {
+      "category": 8,
+      "name": "HP LJ P5526",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 242,
+    "fields": {
+      "equipment_type": 3,
+      "model": 134,
+      "serial_number": "VNBQD0K56J",
+      "inventory_number": "236006002693",
+      "mac_address": null,
+      "print_color": 18,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 243,
+    "fields": {
+      "equipment_type": 4,
+      "model": 10,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 244,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "2309126710171L",
+      "inventory_number": "236006006448",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 245,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 49,
+    "fields": {
+      "employee": 29,
+      "system_unit": 49,
+      "monitor": 241,
+      "printer": 242,
+      "ip_phone": 243,
+      "ups": 244,
+      "iss": 245
+    }
+  },
+  {
+    "model": "inventory.employee",
+    "pk": 30,
+    "fields": {
+      "fullname": "Нуржанов Е.В.",
+      "cabinet": "209",
+      "management": 8,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.asset",
+    "pk": 135,
+    "fields": {
+      "category": 1,
+      "name": "HP ProDesk 643",
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.systemunit",
+    "pk": 50,
+    "fields": {
+      "model": 135,
+      "serial_number": "CZC67184BS",
+      "inventory_number": "236006004889",
+      "computer_name": "3901nurzhanov",
+      "account": "e.nurzhanov",
+      "domain": 2,
+      "ip_address": "103.240.5.22",
+      "os": 3,
+      "cpu": 38,
+      "ram_capacity": 5,
+      "disks": 39,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 246,
+    "fields": {
+      "equipment_type": 2,
+      "model": 16,
+      "serial_number": "UK0A2425501148",
+      "inventory_number": "236006004943",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 247,
+    "fields": {
+      "equipment_type": 3,
+      "model": 8,
+      "serial_number": "-",
+      "inventory_number": "-",
+      "mac_address": null,
+      "print_color": 9,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 248,
+    "fields": {
+      "equipment_type": 4,
+      "model": 20,
+      "serial_number": "FCH9241AK1P",
+      "inventory_number": "237003001195",
+      "mac_address": "-",
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 249,
+    "fields": {
+      "equipment_type": 5,
+      "model": 21,
+      "serial_number": "65060961240380L",
+      "inventory_number": "236006004548",
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": null,
+      "dlp": null,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.equipment",
+    "pk": 250,
+    "fields": {
+      "equipment_type": 6,
+      "model": null,
+      "serial_number": null,
+      "inventory_number": null,
+      "mac_address": null,
+      "print_color": null,
+      "antivirus": 12,
+      "dlp": 13,
+      "created_at": "2026-07-13T05:54:00.849431+00:00",
+      "updated_at": "2026-07-13T05:54:00.849431+00:00"
+    }
+  },
+  {
+    "model": "inventory.workstation",
+    "pk": 50,
+    "fields": {
+      "employee": 30,
+      "system_unit": 50,
+      "monitor": 246,
+      "printer": 247,
+      "ip_phone": 248,
+      "ups": 249,
+      "iss": 250
+    }
+  }
+]

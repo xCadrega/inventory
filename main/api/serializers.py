@@ -1,5 +1,19 @@
-from rest_framework.serializers import ModelSerializer, Serializer, CharField, SerializerMethodField
-from inventory.models import Employee, Management, Workstation, SystemUnit, Equipment, AssetCategory, Asset
+from inventory.models import (
+    Asset,
+    AssetCategory,
+    Employee,
+    Equipment,
+    Management,
+    SystemUnit,
+    Workstation,
+)
+from rest_framework.serializers import (
+    CharField,
+    ModelSerializer,
+    Serializer,
+    SerializerMethodField,
+)
+from rest_framework.validators import ValidationError
 
 
 class EmployeeReadSerializer(ModelSerializer):
@@ -27,6 +41,32 @@ class EmployeeWriteSerializer(ModelSerializer):
             "cabinet",
             "management",
         ]
+
+    def validate(self, attrs):
+        management_name = attrs.get("management")
+
+        management, _ = Management.objects.get_or_create(
+            name=management_name
+        )
+
+        duplicate_exists = Employee.objects.filter(
+            fullname=attrs.get("fullname"),
+            cabinet=attrs.get("cabinet"),
+            management=management,
+        ).exists()
+
+        if duplicate_exists:
+            raise ValidationError(
+                {
+                    "non_field_errors": [
+                        "Такой сотрудник уже существует."
+                    ]
+                }
+            )
+
+        attrs["management"] = management
+
+        return attrs
 
     def create(self, validated_data):
         management_name = validated_data.pop("management")

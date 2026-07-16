@@ -1,5 +1,14 @@
-from django.db.models import Model, BigAutoField, CharField, BigIntegerField, DateTimeField, ForeignKey, \
-    UniqueConstraint, DO_NOTHING
+from django.db.models import (
+    DO_NOTHING,
+    BigAutoField,
+    BigIntegerField,
+    BooleanField,
+    CharField,
+    DateTimeField,
+    ForeignKey,
+    Model,
+    UniqueConstraint,
+)
 
 
 class Management(Model):
@@ -25,6 +34,7 @@ class Employee(Model):
     )
     created_at = DateTimeField(auto_now_add=True)
     updated_at = DateTimeField(auto_now=True)
+    is_active = BooleanField(default=True)
 
     class Meta:
         constraints = [

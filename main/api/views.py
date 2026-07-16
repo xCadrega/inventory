@@ -1,18 +1,37 @@
-from rest_framework.decorators import api_view, APIView
 from django.shortcuts import get_object_or_404
+from inventory.models import (
+    Asset,
+    AssetCategory,
+    Employee,
+    Equipment,
+    SystemUnit,
+    Workstation,
+)
+from rest_framework.status import HTTP_200_OK, HTTP_201_CREATED
+from rest_framework.decorators import APIView, api_view
 from rest_framework.response import Response
-from rest_framework import status
 
-from inventory.models import Employee, Workstation, SystemUnit, Equipment, AssetCategory, Asset
-from .serializers import EmployeeReadSerializer, EmployeeWriteSerializer, WorkstationSerializer, SystemUnitSerializer, \
-    MonitorSerializer, PrinterSerializer, IpPhoneSerializer, UpsSerializer, IssSerializer, AssetCategoriesSerializer, \
-    AssetsSerializer
+from .serializers import (
+    AssetCategoriesSerializer,
+    AssetsSerializer,
+    EmployeeReadSerializer,
+    EmployeeWriteSerializer,
+    IpPhoneSerializer,
+    IssSerializer,
+    MonitorSerializer,
+    PrinterSerializer,
+    SystemUnitSerializer,
+    UpsSerializer,
+    WorkstationSerializer,
+)
+
 
 class Employees(APIView):
     def get(self, request):
         employees = (
             Employee.objects
             .select_related("management")
+            .filter(is_active=True)
         )
 
         serializer = EmployeeReadSerializer(employees, many=True)
@@ -20,20 +39,15 @@ class Employees(APIView):
 
     def post(self, request):
         serializer = EmployeeWriteSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
 
-        if serializer.is_valid():
-            employee = serializer.save()
+        employee = serializer.save()
 
-            response_serializer = EmployeeReadSerializer(employee)
-
-            return Response(
-                response_serializer.data,
-                status=201
-            )
+        response_serializer = EmployeeReadSerializer(employee)
 
         return Response(
-            serializer.errors,
-            status=400
+            response_serializer.data,
+            status=HTTP_201_CREATED
         )
 
     def patch(self, request, employee_id):
@@ -44,16 +58,29 @@ class Employees(APIView):
             data=request.data,
             partial=True
         )
-
         serializer.is_valid(raise_exception=True)
+
         updated_employee = serializer.save()
 
         response_serializer = EmployeeReadSerializer(updated_employee)
         return Response(
             response_serializer.data,
-            status=status.HTTP_200_OK
+            status=HTTP_200_OK
         )
 
+    def delete(self, request, employee_id):
+        employee = get_object_or_404(
+            Employee,
+            id=employee_id,
+            is_active=True
+        )
+
+        employee.is_active = False
+        employee.save(update_fields=["is_active"])
+
+        return Response(
+            status=HTTP_200_OK
+        )
 
 @api_view(["GET"])
 def workstations(request):

@@ -68,20 +68,6 @@ class EmployeeWriteSerializer(ModelSerializer):
 
         return attrs
 
-    def create(self, validated_data):
-        management_name = validated_data.pop("management")
-
-        management, created = Management.objects.get_or_create(
-            name=management_name
-        )
-
-        employee = Employee.objects.create(
-            management=management,
-            **validated_data
-        )
-
-        return employee
-
 
 class EmployeeShortSerializer(ModelSerializer):
     class Meta:
@@ -219,15 +205,15 @@ class WorkstationSerializer(ModelSerializer):
         }
 
 
-class SystemUnitSerializer(EmployeeMixin, ModelSerializer):
+class SystemUnitReadSerializer(EmployeeMixin, ModelSerializer):
     employee_relation = "workstations"
 
-    model = CharField(source="model.name", read_only=True)
-    domain = CharField(source="domain.name", read_only=True)
-    os = CharField(source="os.name", read_only=True)
-    cpu = CharField(source="cpu.name", read_only=True)
-    ram_capacity = CharField(source="ram_capacity.name", read_only=True)
-    disks = CharField(source="disks.name", read_only=True)
+    model = CharField(source="model.name")
+    domain = CharField(source="domain.name")
+    os = CharField(source="os.name")
+    cpu = CharField(source="cpu.name")
+    ram_capacity = CharField(source="ram_capacity.name")
+    disks = CharField(source="disks.name")
 
     class Meta:
         model = SystemUnit

@@ -176,169 +176,99 @@ class SystemUnits(APIView):
         )
 
 
-class Monitors(APIView):
-    def get(self, request, monitor_id=None):
-        monitors = get_equipment_by_type("monitor")
+class BaseEquipmentView(APIView):
+    equipment_type = None
+    serializer_class = None
 
-        if monitor_id:
-            monitor = get_object_or_404(monitors, id=monitor_id)
+    def get_queryset(self):
+        if self.equipment_type is None:
+            raise NotImplementedError(
+                "Необходимо указать equipment_type"
+            )
 
-            serializer = MonitorSerializer(monitor)
+        return get_equipment_by_type(self.equipment_type)
+
+    def get_serializer_class(self):
+        if self.serializer_class is None:
+            raise NotImplementedError(
+                "Необходимо указать serializer_class"
+            )
+
+        return self.serializer_class
+
+    def get(self, request, equipment_id=None):
+        queryset = self.get_queryset()
+        serializer_class = self.get_serializer_class()
+
+        if equipment_id is not None:
+            equipment = get_object_or_404(
+                queryset,
+                id=equipment_id
+            )
+
+            serializer = serializer_class(equipment)
             return Response(serializer.data)
 
-        serializer = MonitorSerializer(monitors, many=True)
+        serializer = serializer_class(queryset, many=True)
         return Response(serializer.data)
 
-    def patch(self, request, monitor_id):
-        monitors = get_equipment_by_type("monitor")
+    def patch(self, request, equipment_id):
+        queryset = self.get_queryset()
+        serializer_class = self.get_serializer_class()
 
-        monitor = get_object_or_404(monitors, id=monitor_id)
+        equipment = get_object_or_404(
+            queryset,
+            id=equipment_id
+        )
 
-        serializer = MonitorSerializer(
-            monitor,
-            data=request.data
+        serializer = serializer_class(
+            equipment,
+            data=request.data,
+            partial=True
         )
         serializer.is_valid(raise_exception=True)
+        serializer.save()
 
-        updated_monitor = serializer.save()
-
-        response_serializer = MonitorSerializer(updated_monitor)
         return Response(
-            response_serializer.data,
+            serializer.data,
             status=HTTP_200_OK
         )
 
 
-class Printers(APIView):
-    def get(self, request, printer_id=None):
-        printers = get_equipment_by_type("printer")
+class Monitors(BaseEquipmentView):
+    equipment_type = "monitor"
+    serializer_class = MonitorSerializer
 
-        if printer_id:
-            printer = get_object_or_404(printers, id=printer_id)
 
-            serializer = PrinterSerializer(printer)
-            return Response(serializer.data)
+class Printers(BaseEquipmentView):
+    equipment_type = "printer"
+    serializer_class = PrinterSerializer
 
-        serializer = PrinterSerializer(printers, many=True)
+
+class IpPhones(BaseEquipmentView):
+    equipment_type = "ip_phone"
+    serializer_class = IpPhoneSerializer
+
+
+class Ups(BaseEquipmentView):
+    equipment_type = "ups"
+    serializer_class = UpsSerializer
+
+
+class Iss(BaseEquipmentView):
+    equipment_type = "iss"
+    serializer_class = IssSerializer
+
+
+class Assets(APIView):
+    def get(self, request, category_id=None):
+        categories = Asset.objects.all()
+
+        if category_id:
+            categories = categories.filter(category_id=category_id)
+
+        serializer = AssetsSerializer(categories, many=True)
         return Response(serializer.data)
-
-    def patch(self, request, printer_id):
-        printers = get_equipment_by_type("printer")
-
-        printer = get_object_or_404(printers, id=printer_id)
-
-        serializer = PrinterSerializer(
-            printer,
-            data=request.data
-        )
-        serializer.is_valid(raise_exception=True)
-
-        updated_printer = serializer.save()
-
-        response_serializer = PrinterSerializer(updated_printer)
-        return Response(
-            response_serializer.data,
-            status=HTTP_200_OK
-        )
-
-
-class IpPhones(APIView):
-    def get(self, request, ip_phone_id=None):
-        ip_phones = get_equipment_by_type("ip_phone")
-
-        if ip_phone_id:
-            ip_phone = get_object_or_404(ip_phones, id=ip_phone_id)
-
-            serializer = IpPhoneSerializer(ip_phone)
-            return Response(serializer.data)
-
-        serializer = IpPhoneSerializer(ip_phones, many=True)
-        return Response(serializer.data)
-
-    def patch(self, request, ip_phone_id):
-        ip_phones = get_equipment_by_type("ip_phone")
-
-        ip_phone = get_object_or_404(ip_phones, id=ip_phone_id)
-
-        serializer = IpPhoneSerializer(
-            ip_phone,
-            data=request.data
-        )
-        serializer.is_valid(raise_exception=True)
-
-        updated_ip_phone = serializer.save()
-
-        response_serializer = IpPhoneSerializer(updated_ip_phone)
-        return Response(
-            response_serializer.data,
-            status=HTTP_200_OK
-        )
-
-
-class Ups(APIView):
-    def get(self, request, ups_id=None):
-        ups = get_equipment_by_type("ups")
-
-        if ups_id:
-            current_ups = get_object_or_404(ups, id=ups_id)
-
-            serializer = UpsSerializer(current_ups)
-            return Response(serializer.data)
-
-        serializer = UpsSerializer(ups, many=True)
-        return Response(serializer.data)
-
-    def patch(self, request, ups_id):
-        ups = get_equipment_by_type("ups")
-
-        current_ups = get_object_or_404(ups, id=ups_id)
-
-        serializer = UpsSerializer(
-            current_ups,
-            data=request.data
-        )
-        serializer.is_valid(raise_exception=True)
-
-        updated_ups = serializer.save()
-
-        response_serializer = UpsSerializer(updated_ups)
-        return Response(
-            response_serializer.data,
-            status=HTTP_200_OK
-        )
-
-
-class Iss(APIView):
-    def get(self, request, iss_id=None):
-        iss = get_equipment_by_type("iss")
-
-        if iss_id:
-            current_iss = get_object_or_404(iss, id=iss_id)
-
-            serializer = IssSerializer(current_iss)
-            return Response(serializer.data)
-
-        serializer = IssSerializer(iss, many=True)
-        return Response(serializer.data)
-
-    def patch(self, request, iss_id):
-        iss = get_equipment_by_type("iss")
-
-        current_iss = get_object_or_404(iss, id=iss_id)
-
-        serializer = IssSerializer(
-            current_iss,
-            data=request.data
-        )
-        serializer.is_valid(raise_exception=True)
-
-        updated_iss = serializer.save()
-
-        response_serializer = IssSerializer(updated_iss)
-        return Response(
-            response_serializer.data,
-            status=HTTP_200_OK
-        )
 
 
 def get_equipment_by_type(code):
@@ -353,17 +283,6 @@ def get_equipment_by_type(code):
         )
         .filter(equipment_type__code=code)
     )
-
-
-class Assets(APIView):
-    def get(self, request, category_id=None):
-        categories = Asset.objects.all()
-
-        if category_id:
-            categories = categories.filter(category_id=category_id)
-
-        serializer = AssetsSerializer(categories, many=True)
-        return Response(serializer.data)
 
 
 @api_view(["GET"])

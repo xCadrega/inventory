@@ -1,5 +1,173 @@
 [
   {
+    "model": "inventory.department",
+    "pk": 1,
+    "fields": {
+      "name": "ДГД по Костанайской области",
+      "code": "3901"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 2,
+    "fields": {
+      "name": "УГД по Алтынсаринскому району",
+      "code": "3902"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 3,
+    "fields": {
+      "name": "УГД по Мендыкаринскому району",
+      "code": "3903"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 4,
+    "fields": {
+      "name": "УГД по Житикаринскому району",
+      "code": "3904"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 5,
+    "fields": {
+      "name": "УГД по Камыстинскому району",
+      "code": "3905"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 6,
+    "fields": {
+      "name": "УГД по Карасускому району",
+      "code": "3906"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 7,
+    "fields": {
+      "name": "УГД по Карабалыкскому району",
+      "code": "3907"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 8,
+    "fields": {
+      "name": "УГД по Костанайскому району",
+      "code": "3908"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 9,
+    "fields": {
+      "name": "УГД по Узункольскому району",
+      "code": "3909"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 10,
+    "fields": {
+      "name": "УГД по Наурзумскому району",
+      "code": "3910"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 11,
+    "fields": {
+      "name": "УГД по Денисовскому району",
+      "code": "3911"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 12,
+    "fields": {
+      "name": "УГД по Аулиекольскому району",
+      "code": "3912"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 13,
+    "fields": {
+      "name": "УГД по району Беимбета Майлина",
+      "code": "3913"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 14,
+    "fields": {
+      "name": "УГД по Сарыкольскому району",
+      "code": "3914"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 15,
+    "fields": {
+      "name": "УГД по Федоровскому району",
+      "code": "3915"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 16,
+    "fields": {
+      "name": "УГД по г. Костанаю",
+      "code": "3917"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 17,
+    "fields": {
+      "name": "УГД по г. Лисаковску",
+      "code": "3918"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 18,
+    "fields": {
+      "name": "УГД по г. Рудному",
+      "code": "3919"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 19,
+    "fields": {
+      "name": "УГД по Амангельдинскому району",
+      "code": "3920"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 20,
+    "fields": {
+      "name": "УГД по Жангельдинскому району",
+      "code": "3923"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 21,
+    "fields": {
+      "name": "УГД по г. Аркалыку",
+      "code": "3925"
+    }
+  },
+  {
     "model": "inventory.equipmenttype",
     "pk": 1,
     "fields": {
@@ -162,7 +330,7 @@
     "model": "inventory.employee",
     "pk": 1,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Досанов К.Е.",
       "cabinet": "101",
       "management": 1,
@@ -416,7 +584,7 @@
     "model": "inventory.employee",
     "pk": 2,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Ермекова А.П.",
       "cabinet": "101",
       "management": 1,
@@ -597,7 +765,7 @@
     "model": "inventory.employee",
     "pk": 3,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Ибраева Н.Ж.",
       "cabinet": "102",
       "management": 2,
@@ -751,7 +919,7 @@
     "model": "inventory.employee",
     "pk": 4,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Омарова С.Н.",
       "cabinet": "102",
       "management": 2,
@@ -895,7 +1063,7 @@
     "model": "inventory.employee",
     "pk": 5,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Жанибекова Ж.И.",
       "cabinet": "102",
       "management": 2,
@@ -1211,7 +1379,7 @@
     "model": "inventory.employee",
     "pk": 6,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Молдабеков Р.М.",
       "cabinet": "104",
       "management": 2,
@@ -1392,7 +1560,7 @@
     "model": "inventory.employee",
     "pk": 7,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Мадиева И.Р.",
       "cabinet": "105",
       "management": 3,
@@ -1890,7 +2058,7 @@
     "model": "inventory.employee",
     "pk": 8,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Даулетова Р.Ж.",
       "cabinet": "106",
       "management": 1,
@@ -2213,7 +2381,7 @@
     "model": "inventory.employee",
     "pk": 9,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Жаксылыкова В.П.",
       "cabinet": "111",
       "management": 4,
@@ -2681,7 +2849,7 @@
     "model": "inventory.employee",
     "pk": 10,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Даулетов М.Н.",
       "cabinet": "111",
       "management": 4,
@@ -2957,7 +3125,7 @@
     "model": "inventory.employee",
     "pk": 11,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Кожахметова А.П.",
       "cabinet": "112",
       "management": 4,
@@ -3253,7 +3421,7 @@
     "model": "inventory.employee",
     "pk": 12,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Алимжанова Б.Е.",
       "cabinet": "113",
       "management": 4,
@@ -3539,7 +3707,7 @@
     "model": "inventory.employee",
     "pk": 13,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Оразбаев В.С.",
       "cabinet": "113",
       "management": 4,
@@ -3805,7 +3973,7 @@
     "model": "inventory.employee",
     "pk": 14,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Байжанова Ж.М.",
       "cabinet": "113",
       "management": 4,
@@ -4091,7 +4259,7 @@
     "model": "inventory.employee",
     "pk": 15,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Тлеубаева К.П.",
       "cabinet": "203",
       "management": 2,
@@ -4367,7 +4535,7 @@
     "model": "inventory.employee",
     "pk": 16,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Утегенова Ж.Р.",
       "cabinet": "203",
       "management": 2,
@@ -4528,7 +4696,7 @@
     "model": "inventory.employee",
     "pk": 17,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Шарипов Д.К.",
       "cabinet": "204",
       "management": 5,
@@ -4662,7 +4830,7 @@
     "model": "inventory.employee",
     "pk": 18,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Абдрахманова Р.Д.",
       "cabinet": "204",
       "management": 5,
@@ -4796,7 +4964,7 @@
     "model": "inventory.employee",
     "pk": 19,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Молдабекова Т.Ж.",
       "cabinet": "205",
       "management": 5,
@@ -4930,7 +5098,7 @@
     "model": "inventory.employee",
     "pk": 20,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Утегенов С.Р.",
       "cabinet": "205",
       "management": 5,
@@ -5216,7 +5384,7 @@
     "model": "inventory.employee",
     "pk": 21,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Ержанова З.И.",
       "cabinet": "206",
       "management": 5,
@@ -5377,7 +5545,7 @@
     "model": "inventory.employee",
     "pk": 22,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Калиева Ж.Ж.",
       "cabinet": "207",
       "management": 6,
@@ -5775,7 +5943,7 @@
     "model": "inventory.employee",
     "pk": 23,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Абишев В.А.",
       "cabinet": "207",
       "management": 6,
@@ -6041,7 +6209,7 @@
     "model": "inventory.employee",
     "pk": 24,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Ибраев Т.Д.",
       "cabinet": "207",
       "management": 6,
@@ -6354,7 +6522,7 @@
     "model": "inventory.employee",
     "pk": 25,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Аскаров И.Н.",
       "cabinet": "208",
       "management": 7,
@@ -6488,7 +6656,7 @@
     "model": "inventory.employee",
     "pk": 26,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Касымов Е.Д.",
       "cabinet": "208",
       "management": 7,
@@ -6622,7 +6790,7 @@
     "model": "inventory.employee",
     "pk": 27,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Бекенова В.Е.",
       "cabinet": "208",
       "management": 7,
@@ -7119,7 +7287,7 @@
     "model": "inventory.employee",
     "pk": 28,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Баймуханова Д.Б.",
       "cabinet": "209",
       "management": 8,
@@ -7243,7 +7411,7 @@
     "model": "inventory.employee",
     "pk": 29,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Болатова Т.С.",
       "cabinet": "209",
       "management": 8,
@@ -7387,7 +7555,7 @@
     "model": "inventory.employee",
     "pk": 30,
     "fields": {
-      "department_id": 1,
+      "department": 1,
       "fullname": "Нуржанов Е.В.",
       "cabinet": "209",
       "management": 8,

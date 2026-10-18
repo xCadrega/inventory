@@ -17,6 +17,9 @@ from rest_framework.validators import ValidationError
 
 
 class EmployeeReadSerializer(ModelSerializer):
+    department = CharField(
+        source="department.name", read_only=True, allow_null=True
+    )
     management = CharField(
         source="management.name"
     )
@@ -27,7 +30,8 @@ class EmployeeReadSerializer(ModelSerializer):
             "id",
             "fullname",
             "cabinet",
-            "management"
+            "management",
+            "department",
         ]
 
 

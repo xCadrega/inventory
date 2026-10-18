@@ -1,7 +1,7 @@
 from django.db.models import (
     DO_NOTHING,
-    BigAutoField,
-    BigIntegerField,
+    AutoField,
+    IntegerField,
     BooleanField,
     CharField,
     DateTimeField,
@@ -11,8 +11,18 @@ from django.db.models import (
 )
 
 
+class Department(Model):
+    id = AutoField(primary_key=True)
+    name = CharField(max_length=255)
+    code = CharField(max_length=4, unique=True)
+
+    class Meta:
+        app_label = "inventory"
+        db_table = "departments"
+
+
 class Management(Model):
-    id = BigAutoField(primary_key=True)
+    id = AutoField(primary_key=True)
     name = CharField(max_length=256, blank=True, null=True)
 
     class Meta:
@@ -21,13 +31,21 @@ class Management(Model):
 
 
 class Employee(Model):
-    id = BigAutoField(primary_key=True)
+    id = AutoField(primary_key=True)
     fullname = CharField(max_length=256, blank=True, null=True)
     cabinet = CharField(max_length=128, blank=True, null=True)
     management = ForeignKey(
         Management,
         on_delete=DO_NOTHING,
         db_column="management_id",
+        blank=True,
+        null=True,
+        related_name="employees"
+    )
+    department = ForeignKey(
+        Department,
+        on_delete=DO_NOTHING,
+        db_column="department_id",
         blank=True,
         null=True,
         related_name="employees"
@@ -51,7 +69,7 @@ class Employee(Model):
 
 
 class EquipmentType(Model):
-    id = BigAutoField(primary_key=True)
+    id = AutoField(primary_key=True)
     name = CharField(max_length=64, blank=True, null=True)
     code = CharField(max_length=64, blank=True, null=True)
 
@@ -64,7 +82,7 @@ class EquipmentType(Model):
 
 
 class AssetCategory(Model):
-    id = BigAutoField(primary_key=True)
+    id = AutoField(primary_key=True)
     name = CharField(max_length=64, blank=True, null=True)
     code = CharField(max_length=64, blank=True, null=True)
 
@@ -77,7 +95,7 @@ class AssetCategory(Model):
 
 
 class Asset(Model):
-    id = BigAutoField(primary_key=True)
+    id = AutoField(primary_key=True)
     category = ForeignKey(
         AssetCategory,
         on_delete=DO_NOTHING,
@@ -99,7 +117,7 @@ class Asset(Model):
 
 
 class SystemUnit(Model):
-    id = BigAutoField(primary_key=True)
+    id = AutoField(primary_key=True)
     model = ForeignKey(
         Asset,
         on_delete=DO_NOTHING,
@@ -162,7 +180,7 @@ class SystemUnit(Model):
 
 
 class Equipment(Model):
-    id = BigAutoField(primary_key=True)
+    id = AutoField(primary_key=True)
     equipment_type = ForeignKey(
         EquipmentType,
         on_delete=DO_NOTHING,
@@ -215,7 +233,7 @@ class Equipment(Model):
 
 
 class Workstation(Model):
-    id = BigAutoField(primary_key=True)
+    id = AutoField(primary_key=True)
     employee = ForeignKey(
         Employee,
         on_delete=DO_NOTHING,
@@ -279,7 +297,7 @@ class Workstation(Model):
 
 
 class ChangeLog(Model):
-    id = BigAutoField(primary_key=True)
+    id = AutoField(primary_key=True)
     employee = ForeignKey(
         Employee,
         on_delete=DO_NOTHING,
@@ -288,7 +306,7 @@ class ChangeLog(Model):
         null=True,
         related_name="change_logs"
     )
-    admin_id = BigIntegerField(blank=True, null=True)
+    admin_id = IntegerField(blank=True, null=True)
     workstation = ForeignKey(
         Workstation,
         on_delete=DO_NOTHING,

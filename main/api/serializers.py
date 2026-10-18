@@ -12,6 +12,7 @@ from rest_framework.serializers import (
     ModelSerializer,
     Serializer,
     SerializerMethodField,
+    SlugRelatedField,
 )
 from rest_framework.validators import ValidationError
 
@@ -212,12 +213,12 @@ class WorkstationSerializer(ModelSerializer):
 class SystemUnitReadSerializer(EmployeeMixin, ModelSerializer):
     employee_relation = "workstations"
 
-    model = CharField(source="model.name")
-    domain = CharField(source="domain.name")
-    os = CharField(source="os.name")
-    cpu = CharField(source="cpu.name")
-    ram_capacity = CharField(source="ram_capacity.name")
-    disks = CharField(source="disks.name")
+    model = CharField(source="model.name", read_only=True, allow_null=True)
+    domain = CharField(source="domain.name", read_only=True, allow_null=True)
+    os = CharField(source="os.name", read_only=True, allow_null=True)
+    cpu = CharField(source="cpu.name", read_only=True, allow_null=True)
+    ram_capacity = CharField(source="ram_capacity.name", read_only=True, allow_null=True)
+    disks = CharField(source="disks.name", read_only=True, allow_null=True)
 
     class Meta:
         model = SystemUnit
@@ -241,7 +242,7 @@ class SystemUnitReadSerializer(EmployeeMixin, ModelSerializer):
 class MonitorSerializer(EmployeeMixin, ModelSerializer):
     employee_relation = "monitor_workstations"
 
-    model = CharField(source="model.name", read_only=True)
+    model = CharField(source="model.name", read_only=True, allow_null=True)
 
     class Meta:
         model = Equipment
@@ -257,8 +258,8 @@ class MonitorSerializer(EmployeeMixin, ModelSerializer):
 class PrinterSerializer(EmployeeMixin, ModelSerializer):
     employee_relation = "printer_workstations"
 
-    model = CharField(source="model.name", read_only=True)
-    print_color = CharField(source="print_color.name", read_only=True)
+    model = CharField(source="model.name", read_only=True, allow_null=True)
+    print_color = CharField(source="print_color.name", read_only=True, allow_null=True)
 
     class Meta:
         model = Equipment
@@ -275,7 +276,7 @@ class PrinterSerializer(EmployeeMixin, ModelSerializer):
 class IpPhoneSerializer(EmployeeMixin, ModelSerializer):
     employee_relation = "ip_phone_workstations"
 
-    model = CharField(source="model.name", read_only=True)
+    model = CharField(source="model.name", read_only=True, allow_null=True)
 
     class Meta:
         model = Equipment
@@ -292,7 +293,7 @@ class IpPhoneSerializer(EmployeeMixin, ModelSerializer):
 class UpsSerializer(EmployeeMixin, ModelSerializer):
     employee_relation = "ups_workstations"
 
-    model = CharField(source="model.name", read_only=True)
+    model = CharField(source="model.name", read_only=True, allow_null=True)
 
     class Meta:
         model = Equipment
@@ -308,8 +309,8 @@ class UpsSerializer(EmployeeMixin, ModelSerializer):
 class IssSerializer(ModelSerializer, EmployeeMixin):
     employee_relation = "iss_workstations"
 
-    antivirus = CharField(source="antivirus.name", read_only=True)
-    dlp = CharField(source="dlp.name", read_only=True)
+    antivirus = CharField(source="antivirus.name", read_only=True, allow_null=True)
+    dlp = CharField(source="dlp.name", read_only=True, allow_null=True)
 
     class Meta:
         model = Equipment
@@ -339,3 +340,71 @@ class AssetsSerializer(ModelSerializer):
             "name",
             "code"
         ]
+
+
+SYSTEM_UNIT_ASSET_CATEGORIES = {
+    "model": "system_unit_model",
+    "domain": "domain",
+    "os": "os",
+    "cpu": "cpu",
+    "ram_capacity": "ram_capacity",
+    "disks": "disks",
+}
+
+
+class SystemUnitWriteSerializer(ModelSerializer):
+    class Meta:
+        model = SystemUnit
+        fields = [
+            "model", "domain", "os", "cpu", "ram_capacity", "disks",
+            "serial_number", "inventory_number", "computer_name", "account",
+            "ip_address",
+        ]
+
+    def get_fields(self):
+        fields = super().get_fields()
+        for name, code in SYSTEM_UNIT_ASSET_CATEGORIES.items():
+            fields[name] = SlugRelatedField(
+                slug_field="name",
+                queryset=Asset.objects.filter(category__code=code),
+                required=False,
+                allow_null=True,
+            )
+        return fields
+
+
+EQUIPMENT_ASSET_CATEGORIES = {
+    "monitor": {"model": "monitor_model"},
+    "printer": {"model": "printer_model", "print_color": "print_color"},
+    "ip_phone": {"model": "ip_phone_model"},
+    "ups": {"model": "ups_model"},
+    "iss": {"antivirus": "antivirus", "dlp": "dlp"},
+}
+
+
+class EquipmentWriteSerializer(ModelSerializer):
+    class Meta:
+        model = Equipment
+        fields = [
+            "model", "print_color", "antivirus", "dlp", "serial_number",
+            "inventory_number", "mac_address",
+        ]
+
+    def get_fields(self):
+        fields = super().get_fields()
+        equipment_type = self.context["equipment_type"]
+        categories = EQUIPMENT_ASSET_CATEGORIES[equipment_type]
+        allowed = set(categories)
+        if equipment_type != "iss":
+            allowed.update(("serial_number", "inventory_number"))
+        if equipment_type == "ip_phone":
+            allowed.add("mac_address")
+        fields = {name: field for name, field in fields.items() if name in allowed}
+        for name, code in categories.items():
+            fields[name] = SlugRelatedField(
+                slug_field="name",
+                queryset=Asset.objects.filter(category__code=code),
+                required=False,
+                allow_null=True,
+            )
+        return fields

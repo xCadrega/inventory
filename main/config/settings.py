@@ -63,6 +63,11 @@ DATABASES = {
     }
 }
 
+DATABASES["user_info"] = {
+    **DATABASES["default"],
+    "NAME": getenv("DB_USER_INFO", "user_info"),
+}
+
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',

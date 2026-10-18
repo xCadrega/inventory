@@ -14,6 +14,10 @@ from rest_framework.status import (
 )
 from rest_framework.decorators import APIView, api_view
 from rest_framework.response import Response
+from rest_framework.exceptions import ValidationError
+from rest_framework.serializers import IntegerField
+
+from .authentication import get_admin_id
 
 from .serializers import (
     AssetCategoriesSerializer,
@@ -29,6 +33,8 @@ from .serializers import (
     WorkstationSerializer,
 )
 from .services import (
+    update_system_unit,
+    update_equipment,
     create_employee_with_workstation,
     create_workstation,
 )
@@ -158,21 +164,22 @@ class SystemUnits(APIView):
         serializer = SystemUnitReadSerializer(system_units, many=True)
         return Response(serializer.data)
 
-    def patch(self, request, system_unit_id):
-        system_unit = get_object_or_404(SystemUnit, id=system_unit_id)
-
-        serializer = SystemUnitReadSerializer(
-            system_unit,
-            data=request.data
-        )
-        serializer.is_valid(raise_exception=True)
-
-        updated_system_unit = serializer.save()
-
-        response_serializer = SystemUnitReadSerializer(updated_system_unit)
+    def patch(self, request, system_unit_id=None):
+        try:
+            object_id = IntegerField(min_value=1).run_validation(
+                request.data.get("id", system_unit_id)
+            )
+        except ValidationError as exc:
+            raise ValidationError({"id": exc.detail}) from exc
+        if system_unit_id is not None and object_id != system_unit_id:
+            raise ValidationError({"id": "ID в теле запроса и URL должны совпадать."})
+        admin_id = get_admin_id(request)
+        data = request.data.copy()
+        data.pop("id", None)
+        system_unit = update_system_unit(object_id, data, admin_id)
         return Response(
-            response_serializer.data,
-            status=HTTP_200_OK
+            SystemUnitReadSerializer(system_unit).data,
+            status=HTTP_200_OK,
         )
 
 
@@ -212,26 +219,22 @@ class BaseEquipmentView(APIView):
         serializer = serializer_class(queryset, many=True)
         return Response(serializer.data)
 
-    def patch(self, request, equipment_id):
-        queryset = self.get_queryset()
-        serializer_class = self.get_serializer_class()
-
-        equipment = get_object_or_404(
-            queryset,
-            id=equipment_id
-        )
-
-        serializer = serializer_class(
-            equipment,
-            data=request.data,
-            partial=True
-        )
-        serializer.is_valid(raise_exception=True)
-        serializer.save()
-
+    def patch(self, request, equipment_id=None):
+        try:
+            object_id = IntegerField(min_value=1).run_validation(
+                request.data.get("id", equipment_id)
+            )
+        except ValidationError as exc:
+            raise ValidationError({"id": exc.detail}) from exc
+        if equipment_id is not None and object_id != equipment_id:
+            raise ValidationError({"id": "ID в теле запроса и URL должны совпадать."})
+        admin_id = get_admin_id(request)
+        data = request.data.copy()
+        data.pop("id", None)
+        equipment = update_equipment(object_id, self.equipment_type, data, admin_id)
         return Response(
-            serializer.data,
-            status=HTTP_200_OK
+            self.get_serializer_class()(equipment).data,
+            status=HTTP_200_OK,
         )
 
 
